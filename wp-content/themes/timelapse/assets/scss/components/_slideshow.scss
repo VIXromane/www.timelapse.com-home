@@ -1,0 +1,19 @@
+.cycle-slideshow {
+    width: 100%;
+    height: 300px;
+
+    
+
+    div {
+        min-width: 100%;
+        position: relative;
+        img {
+            min-width: 100%;
+        }
+        h2 {
+            position: absolute;
+            top: 10px;
+            left: 50px;
+        }
+    }
+}
