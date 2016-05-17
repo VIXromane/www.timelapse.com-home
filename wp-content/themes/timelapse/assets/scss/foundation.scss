@@ -70,10 +70,7 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-/*
-  My custom styles:
-  Add your scss files below to structure your project styles
-*/
+
 
 // Modules
 @import "modules/navigation";
@@ -94,3 +91,8 @@
 @import "templates/page-sidebar-left";
 @import "templates/page-full-width";
 @import "templates/single-post";
+
+ // Romane custom styles:
+
+@import "templates/home";
+@import "templates/global";

@@ -1,0 +1,68 @@
+
+
+/* COLORS*/
+
+$darkgray: #292a2f;
+$mediumgray: #c3c3c2;
+$lightgray: #f3f2f1;
+$gold: #f0cb97;
+$lightgold: #f4ece2;
+$goldgray: #f8f5f1; /* AVIS CLIENT BG */
+$fontgold: #d5af6d;
+$green: #aae6b8;
+
+/* FONTS*/
+
+$lora: 'Lora', serif;
+$play: 'Playfair Display', serif;
+$mont: 'Montserrat', sans-serif;
+
+
+/* GLOBAL */
+
+h2{
+
+	font-size:30px;
+	font-family: $play;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: $darkgray;
+	padding: 50px 0px;
+	text-align: center;
+}
+
+p{
+	font-family: $lora;
+	font-size: 14px;
+	line-height: 22px;
+	color: $darkgray;
+}
+
+.cta{
+	display: block;
+	background-color: $darkgray;
+	color: white;
+	font-family: $mont;
+	font-size: 12px;
+	height: 50px;
+	line-height: 50px;
+	max-width:370px;
+	margin: 50px auto;
+	-webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+	
+	i{
+		padding-right: 10px;
+	}
+
+	&:hover{
+	-webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: $gold;
+    color: white;
+	};
+}

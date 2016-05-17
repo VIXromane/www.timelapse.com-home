@@ -30,6 +30,7 @@ get_header(); ?>
 -->
 
 	<!-- LISTING PRODUIT WOO COMMERCE MODELES ICONIQUES-->
+
 	<div class="small-12 large-12 columns" role="main"><!-- MAIN-->
 
 		<div class="row column text-center">
@@ -59,6 +60,14 @@ get_header(); ?>
 				<?php do_action( 'foundationpress_page_after_comments' ); ?>
 			</article>
 		<?php endwhile;?>
+
+		<div class="row text-center"><!-- CTA TOUTES NOS MONTRES-->
+
+			<a role="button" class="cta" href="#">
+				<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+				DÉCOUVRIR TOUTES NOS MONTRES
+			</a>
+		</div>
 
 		<?php do_action( 'foundationpress_after_content' ); ?>
 
