@@ -11,7 +11,7 @@
 ?>
 <!doctype html>
 
-<?php wp_nav_menu( array( 'theme_location' => 'top-bar-r' ) ); ?>
+<!--<?php wp_nav_menu( array( 'theme_location' => 'top-bar-r' ) ); ?>-->
 
 <html class="no-js" <?php language_attributes(); ?> >
 	<head>
