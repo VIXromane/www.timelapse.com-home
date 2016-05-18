@@ -1,0 +1,127 @@
+/* CSS HOME PAGE */
+
+.maison{
+	background-color: $lightgold;
+}
+
+.intro{
+	margin-bottom: 50px;
+}
+
+.brand{
+	vertical-align: middle;
+	margin-bottom: 50px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+
+	&:hover{
+		opacity: 0.4;
+		transform:translateY(10px);
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+
+	img{
+		width:60%;
+	}
+}
+
+.journal{
+	article{
+
+		a{
+			display: flex;
+			max-width:370px;
+			align-items: center;
+			position: relative;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+			opacity: 0.85;
+			img{
+				
+			}
+			div{
+				z-index:10;
+				padding-top: 5px;
+				margin-bottom: 0px;
+				position: absolute;
+				left: -10px;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				-moz-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				-o-transform: translateY(-50%);
+				transform: translateY(-50%);
+				height:60px;
+				width: 60px;
+				display: block;
+				background-color: $goldgray;
+				strong{
+					font-family: $lora;
+					font-weight: 700;
+					font-size: 15px;
+					color: black;
+				}
+				time{
+					font-size: 12px !important;
+					font-family: $lora;
+					color: $darkgray;
+					font-weight: 400;
+				}
+			}
+			&:hover{
+				transform: scale(0.97);
+				opacity: 1;
+			}
+		}
+		h4{
+			font-family: $mont;
+			font-size: 14px;
+			font-weight: bold;
+			text-align: left;
+			line-height: 24px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			color: $darkgray;
+			padding-top: 15px;
+		}
+		p{
+			font-size: 12px;
+			text-align: left;
+		}
+		.link{
+			font-family: $mont;
+			font-size: 11px;
+			max-width: 120px;
+			color: $darkgray;
+			text-transform: uppercase;
+			margin-bottom: 50px;
+			letter-spacing: 1.1px;
+
+			i{
+				color: $darkgray;
+				padding-right:10px;
+			}
+			&:hover i{
+				color: $gold;
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+			}
+			&:hover {
+				color: $gold;
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+			}
+		}
+	}
+}

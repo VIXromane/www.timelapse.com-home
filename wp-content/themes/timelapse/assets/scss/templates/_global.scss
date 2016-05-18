@@ -29,6 +29,7 @@ h2{
 	color: $darkgray;
 	padding: 50px 0px;
 	text-align: center;
+	margin: 0px;
 }
 
 p{
@@ -48,21 +49,23 @@ p{
 	line-height: 50px;
 	max-width:370px;
 	margin: 50px auto;
-	-webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
+	letter-spacing: 1.4px;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 	
 	i{
 		padding-right: 10px;
 	}
 
 	&:hover{
-	-webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    background-color: $gold;
-    color: white;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background-color: white;
+    border: 1px solid $darkgray;
+    color: $darkgray;
 	};
 }
