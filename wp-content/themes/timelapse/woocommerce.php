@@ -152,10 +152,57 @@ get_header(); ?>
 			</a>
 		</article>
 
-
-
 	</div><!-- FIN ROW -->
-</div>
+</div><!-- FIN JOURNAL TIMELAPSE-->
+
+<div class="text-center reassurance"><!-- REASSURANCE-->
+	<div class="row"><!-- contenu -->
+		<div class="text-center">
+			<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/circle-logo-timelapse.png" alt="logo timelapse rond reassurance" id="circle-logo"/>
+		</div>
+
+		<div class="small-12 large-3 columns">
+			<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/authenticity.png" alt="authenticité et tracabilité des produits">
+			<h3>
+				AUTHENTICITÉ ET TRACABILITÉ
+			</h3>
+			<p>
+				Tous les modèles qui vous sont proposés sont authentiques
+			</p>
+		</div>
+
+  		<div class="small-12 large-3 columns">
+  			<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/garantie.png" alt="garantie 12 mois timelapse">
+  			<h3>
+				GARANTIE TIMELAPSE
+			</h3>
+			<p>
+				Tous les produits possèdent la garantie 12 mois Timelapse
+			</p>
+  		</div>
+
+  		<div class="small-12 large-3 columns">
+  			<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/secured-payment.png" alt="paiements en ligne sécurisés">
+  			<h3>
+				PAIEMENT SÉCURISÉ
+			</h3>
+			<p>
+				Toutes vos transactions en ligne sont 100% sécurisées
+			</p>
+  		</div>
+
+  		<div class="small-12 large-3 columns">
+  			<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/delivery.png" alt="livraisons et retours sécurisés">
+  			<h3>
+				LIVRAISONS ET RETOURS
+			</h3>
+			<p>
+				Livraisons et retours rapides et sécurisés
+			</p>
+  		</div>
+	</div>
+</div><!-- FIN REASSURANCE-->
+
 
 
 <?php get_footer();
