@@ -55,12 +55,12 @@ require_once( 'library/slider-lib.php' );
 define('_URL_IMAGES', get_stylesheet_directory_uri().'/assets/images/');
 
 
-function testPourriATitreDexemple() {
-    echo "coucou";
+function marque() {
+    
 }
 
 // --> Premier test pour actions
-    add_action('woocommerce_single_product_summary', 'testPourriATitreDexemple', 15);
+    add_action('woocommerce_single_product_summary', 'marque', 15);
 
 // --> Changement d'ordre on met le prix au dessus du titre
     // 1. Supprime l'action initiale d'affichage du titre
@@ -75,14 +75,13 @@ function testPourriATitreDexemple() {
     // 2. fonction rajouté dans le fichier single-product/product-image.php
 
 
-add_action('foundationpress_after_header', 'testPourriATitreDexemple', 1);
 
 function my_title($title, $idarticle) {
     if(get_post_format($idarticle) == "video")
     {
         return "/2// -> ".$title;
     }
-    return "....3--".$title;
+    return "".$title;
 
 }
 add_filter('the_title', 'my_title', 10, 2);

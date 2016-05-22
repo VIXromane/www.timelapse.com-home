@@ -79,7 +79,6 @@
 
 // Components
 @import "components/buttons";
-@import "components/slideshow";
 @import "components/featured-image";
 @import "components/dividers";
 @import "components/links";
@@ -94,5 +93,9 @@
 
  // Romane custom styles:
 
+
 @import "templates/global";
+@import "templates/slideshow";
 @import "templates/home";
+@import "templates/my-woocommerce";
+

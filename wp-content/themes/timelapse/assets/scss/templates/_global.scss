@@ -69,3 +69,8 @@ p{
     color: $darkgray;
 	};
 }
+
+::-webkit-input-placeholder { color: pink; }
+::-moz-placeholder { color:pink; } /* firefox 19+ */
+:-ms-input-placeholder { color:pink; } /* ie */
+input:-moz-placeholder { color:pink; }

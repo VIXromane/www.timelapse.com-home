@@ -106,6 +106,10 @@
 			text-transform: uppercase;
 			margin-bottom: 50px;
 			letter-spacing: 1.1px;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
 
 			i{
 				color: $darkgray;
@@ -164,3 +168,115 @@
 		margin-bottom: 50px;
 	}
 }
+
+/* TESTIMONIAUX */
+
+#owl{
+	background-color: $goldgray;
+	max-height: 445px;
+	.testimonial{
+		#quotee{
+			margin-bottom: 50px;
+			width:50px !important;
+			height: 35px !important;
+			display: block;
+			margin: 0 auto;
+		}
+		.quote{
+			font-style: italic;
+			margin-top: 50px;
+			font-size: 14px;
+			line-height: 24px;
+			letter-spacing: 1.2px;
+			color: $darkgray;
+		}
+		.author{
+			font-weight: 700;
+			color: $darkgray;
+		}
+	}
+}
+
+/* RESEAUX SOCIAUX + NEWSLETTER */
+
+.social{
+	#social{
+		height: 375px;
+		article{
+			margin-bottom: 30px;
+			a{
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+				opacity: 0.85;
+				display: block;
+
+				img{
+
+				}
+
+				&:hover{
+					transform: scale(0.97);
+					opacity: 1;
+				}
+			}
+		}
+	}
+	#newsletter{
+		height: 375px;
+		display: flex;
+		align-items: center;
+		.newsletter-content{
+			vertical-align: middle;
+			h3{
+				font-family: $lora;
+				text-align: left;
+				color: $darkgray;
+				margin-bottom: 50px;
+				font-size: 18px;
+				font-weight: 700;
+			}
+			p{
+				text-align: left;
+				margin-bottom: 50px;
+			}
+			input{
+				height: 50px;
+				border: 0.5px solid #d1d1d1;
+				margin-left: 15px;
+			}
+			::-webkit-input-placeholder { color: $mediumgray; font-family: $lora; padding-left: 5px; font-style: italic; letter-spacing: 1px; }
+			::-moz-placeholder { color: $mediumgray; font-family: $lora; padding-left: 5px; font-style: italic; letter-spacing: 1px; } /* firefox 19+ */
+			:-ms-input-placeholder { color:#f00; } /* ie */
+			input:-moz-placeholder { color:#f00; }
+			.abonnement{
+				height: 50px;
+				background-color: $darkgray;
+				text-transform: uppercase;
+				line-height: 40px;
+				font-size: 12px;
+				font-family: $mont;
+				color: white;
+				width:100%;
+				-webkit-transition: all 0.5s ease-in-out;
+				-moz-transition: all 0.5s ease-in-out;
+				-o-transition: all 0.5s ease-in-out;
+				transition: all 0.5s ease-in-out;
+				
+				&:hover{
+					-webkit-transition: all 0.5s ease-in-out;
+					-moz-transition: all 0.5s ease-in-out;
+					-o-transition: all 0.5s ease-in-out;
+					transition: all 0.5s ease-in-out;
+					background-color: white;
+					border: 1px solid $darkgray;
+					color: $darkgray;
+				}
+
+			}
+		}
+	}
+}
+
+

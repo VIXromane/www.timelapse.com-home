@@ -1,0 +1,29 @@
+.products{
+	li{
+		border: 1px solid $light-gray;
+		
+		a{
+			padding:35px;
+			img{
+				display: block;
+				max-height:230px;
+				max-width: 150px;
+				margin:0 auto !important;
+			}
+			h3{
+				font-family: $lora;
+				font-size: 12px;
+				font-weight: 700;
+				line-height: 24px;
+				color: $darkgray;
+			}
+			.price{
+				font-family: $play;
+				color: $gold !important;
+				font-weight: 700;
+				font-size: 12px;	
+			}
+		}
+
+	}
+}
