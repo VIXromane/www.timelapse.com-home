@@ -149,6 +149,22 @@
 		margin: 0 auto;
 		margin-top:-59px;
 		padding-bottom: 25px;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+
+		&:hover{
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+								transform: scale(0.9);
+
+
+
+		}
+
 	}
 	h3{
 		font-family: $mont;
@@ -170,6 +186,18 @@
 }
 
 /* TESTIMONIAUX */
+
+@media screen and (max-width: 480px){
+	#owl{
+		background-color: pink;
+	}
+}
+
+
+@media only screen and (max-width: 40em) {
+	#owl{
+		background-color: pink;
+	} }
 
 #owl{
 	background-color: $goldgray;
@@ -193,6 +221,7 @@
 		.author{
 			font-weight: 700;
 			color: $darkgray;
+			margin-bottom: 80px;
 		}
 	}
 }

@@ -229,61 +229,77 @@ get_header(); ?>
 
 <section class="text-center" id="owl">
 	<div class="row">
-		
+
 		<h2>Votre avis compte</h2>
 
 		<div class="slide cycle-slideshow"
-		data-cycle-fx="carousel"
-		data-cycle-speed="400"
-		data-cycle-timeout="3500"
+		data-cycle-fx="scrollHorz"
+		data-cycle-speed="800"
+		data-cycle-timeout="3000"
+		data-cycle-pager=".example-pager"
 		data-cycle-slides=">article">
 
-			<article class="large-12 columns testimonial" id="quote1"> <!-- QUOTE 1-->
-				<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/quote.png" alt="citation 1 testimoniaux clients timelapse">
+		<article class="large-12 columns testimonial" id="#quote1"> <!-- QUOTE 1-->
+			<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/quote.png" alt="citation 1 testimoniaux clients timelapse">
 
-				<div class="large-12 columns">
-					<p class="hide-for-small-only large-2 columns"></p>
-					<p class="quote small-12 large-8 columns">
-						Un grand choix de montres, une grande disponibilité et joignabilité par téléphone. La montre est superbe comme sur les photos du site. Le colis est arrivé vite et sans problèmes. Je recommande Timelapse pour tous les amoureux des belles montres qui désirent acheter en toute confiance. 
-					</p>
-					<p class="hide-for-small-only large-2 columns"></p>
-				</div>
-				<div class="author">
-					<p>Cédric</p>
-				</div>
-			</article>
+			<div class="large-12 columns">
+				<p class="hide-for-small-only large-2 columns"></p>
+				<p class="quote small-12 large-8 columns">
+					Un grand choix de montres, une grande disponibilité par téléphone. Le colis est arrivé vite et sans problèmes. Je recommande Timelapse pour tous les amoureux des belles montres qui désirent acheter en toute confiance. 
+				</p>
+				<p class="hide-for-small-only large-2 columns"></p>
+			</div>
+			<div class="author">
+				<p>Cédric</p>
+			</div>
+			<div class="puces-slider">
+				<a href="#quote1"><span class="active"></span></a>
+				<a href="#quote2"><span></span></a>
+				<a href="#quote3"><span></span></a>
+			</div>
+		</article>
 
-			<article class="large-12 columns testimonial" id="quote2"><!-- QUOTE 2-->
-				<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/quote.png" alt="citation 2 testimoniaux clients timelapse">
+		<article class="large-12 columns testimonial" id="#quote2"><!-- QUOTE 2-->
+			<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/quote.png" alt="citation 2 testimoniaux clients timelapse">
 
-				<div class="large-12 columns">
-					<p class="hide-for-small-only large-2 columns"></p>
-					<p class="quote small-12 large-8 columns">
-						Réponses aux questions rapides et précises. Contact humain très chaleureux. Emballage parfait. Mise à la taille de la montre parfaite. Description uniforme au produit. Du grand sérieux, je recommande. 
-					</p>
-					<p class="hide-for-small-only large-2 columns"></p>
-				</div>
-				<div class="author">
-					<p>Julien</p>
-				</div>
-			</article>
+			<div class="large-12 columns">
+				<p class="hide-for-small-only large-2 columns"></p>
+				<p class="quote small-12 large-8 columns">
+					Réponses aux questions rapides et précises. Contact humain très chaleureux. Emballage parfait. Mise à la taille de la montre parfaite. Description uniforme au produit. Du grand sérieux, je recommande vivement. 
+				</p>
+				<p class="hide-for-small-only large-2 columns"></p>
+			</div>
+			<div class="author">
+				<p>Julien</p>
+			</div>
+			<div class="puces-slider">
+				<a href="#quote1"><span></span></a>
+				<a href="#quote2"><span class="active"></span></a>
+				<a href="#quote3"><span></span></a>
+			</div>
+		</article>
 
-			<article class="large-12 columns testimonial" id="quote3"><!-- QUOTE 3-->
-				<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/quote.png" alt="citation 3 testimoniaux clients timelapse">
+		<article class="large-12 columns testimonial" id="#quote3"><!-- QUOTE 3-->
+			<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/quote.png" alt="citation 3 testimoniaux clients timelapse">
 
-				<div class="large-12 columns">
-					<p class="hide-for-small-only large-2 columns"></p>
-					<p class="quote small-12 large-8 columns">
-						Un service client remarquable. J'ai dû renvoyer ma montre suite à un dysfonctionnement des aiguilles. Grâce à la garantie Timelapse, j'ai pû reçevoir mon modèle réparé très rapidement sans aucunes complications. Super travail.
-					</p>
-					<p class="hide-for-small-only large-2 columns"></p>
-				</div>
-				<div class="author">
-					<p>Martin</p>
-				</div>
-			</article>
-		</div>
+			<div class="large-12 columns">
+				<p class="hide-for-small-only large-2 columns"></p>
+				<p class="quote small-12 large-8 columns">
+					Un service client remarquable. J'ai dû renvoyer ma montre suite à un dysfonctionnement des aiguilles. Grâce à la garantie Timelapse, j'ai pû reçevoir mon modèle réparé très rapidement sans aucunes complications. Super travail.
+				</p>
+				<p class="hide-for-small-only large-2 columns"></p>
+			</div>
+			<div class="author">
+				<p>Martin</p>
+			</div>
+			<div class="puces-slider">
+				<a href="#quote1"><span></span></a>
+				<a href="#quote2"><span></span></a>
+				<a href="#quote3"><span class="active"></span></a>
+			</div>
+		</article>
 	</div>
+</div>
 </section>
 
 

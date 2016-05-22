@@ -27,13 +27,15 @@
 </div><!-- Close off-canvas content wrapper -->
 <?php endif; ?>
 
-<!-- SCRIPT OWL CAROUSEL TESTIMONIAUX --> 
 
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.5/js/foundation.js'></script>
-<script src='http://code.jquery.com/jquery-migrate-1.2.1.min.js'></script>
-<script src="assets/javascript/testimoniaux.js"></script>
+<!-- include jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<!-- include Cycle2 -->
+<script src="path/to/your/copy/of/jquery.cycle2.js"></script>
+
+<!-- include one or more optional Cycle2 plugins -->
+<script src="path/to/your/copy/of/jquery.cycle2.carousel.js"></script>
 
 <?php wp_footer(); ?>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
