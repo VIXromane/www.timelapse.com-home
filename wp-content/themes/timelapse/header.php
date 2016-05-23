@@ -24,7 +24,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 		<script src="https://use.fontawesome.com/0dfe417c47.js"></script>
-
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 		<?php wp_head(); ?>
 	</head>

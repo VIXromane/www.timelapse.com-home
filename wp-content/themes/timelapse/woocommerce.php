@@ -1,4 +1,29 @@
-<?php
+<section id="intro">
+
+	<div id="visu-intro">
+		<div id="circles">
+			<div id="point1" class="points"></div>
+			<div id="point2" class="points"></div>
+			<div id="point3" class="points"></div>
+			<div id="point4" class="points"></div>
+
+		</div>
+	</div>
+
+
+
+		<!--<img id="visuel-introduction" src="<?= _URL_IMAGES; ?>/_visuels_dyns/visuel-intro.png" alt="visuel Timelapse introduction">-->
+	</section>
+
+	<script>
+	$("a").click(function() {
+		$("section").remove();
+	});
+	</script>
+
+
+
+	<?php
 /**
  * Basic WooCommerce support
  *
@@ -6,8 +31,8 @@
  * @since FoundationPress 1.0.0
  */
 
-get_header(); ?>
 
+get_header(); ?>
 
 
 <!-- <div class="small-12 large-12 columns" role="main">RECHERCHE AVANCEE 

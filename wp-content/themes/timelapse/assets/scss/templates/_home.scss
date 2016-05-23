@@ -1,5 +1,209 @@
 /* CSS HOME PAGE */
 
+#visu-intro{
+	background-color:#292A2F;
+	height: 100%;
+	width: 100%;
+	opacity: 0.4;
+	transform: scale(0.8);
+	position: absolute;
+}
+#circles{
+	height: 1000px;
+	width:1000px;
+	border-radius: 500px;
+	border: #F0CA95 1px solid;
+	margin:0 auto;
+	position: relative;
+	top:-200px;
+}
+#circles:before{
+	content:"";
+	display: block;
+	height: 1200px;
+	width: 1200px;
+	border-radius: 600px;
+	border: #F0CA95 3px solid;
+	margin:0 auto;
+	position: absolute;
+	top:-100px;
+	left:-100px;
+}
+
+#circles:after{
+	content:"";
+	display: block;
+	height: 500px;
+	width: 500px;
+	border-radius: 250px;
+	border: #F0CA95 1px solid;
+	margin:0 auto;
+	position: absolute;
+	top:250px;
+	left:250px;
+}
+#point1{
+	-webkit-animation: spinA 10s infinite linear;
+	animation: spinA 10s infinite linear;
+}
+#point2{
+	-webkit-animation: spinB 10s infinite linear;
+	animation: spinB 10s infinite linear;
+}
+#point3{
+	-webkit-animation: spinC 10s infinite linear;
+	animation: spinC 10s infinite linear;
+}
+#point4{
+	-webkit-animation: spinD 10s infinite linear;
+	animation: spinD 10s infinite linear;
+}
+.points{
+	width:1200px;
+	height: 20px;
+	position: absolute;
+	top:490px;
+	left: -100px;
+}
+.points:before{
+	content:"";
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 10px;
+	position: absolute;
+	right:-10px;
+}
+.points:after{
+	content:"";
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 10px;
+	position: absolute;
+	left:-10px;
+}
+
+@-webkit-keyframes spinA {
+    0%   {-webkit-transform: rotate(0deg);transform: rotate(0deg)}
+    100% {-webkit-transform: rotate(360deg);transform: rotate(360deg)}
+}
+
+@keyframes spinA {
+    0%   {-webkit-transform: rotate(0deg);transform: rotate(0deg)}
+    100% {-webkit-transform: rotate(360deg);transform: rotate(360deg)}
+}
+
+@-webkit-keyframes spinB {
+    0%   {-webkit-transform: rotate(90deg);transform: rotate(90deg)}
+    100% {-webkit-transform: rotate(450deg);transform: rotate(450deg)}
+}
+
+@keyframes spinB {
+    0%   {-webkit-transform: rotate(90deg);transform: rotate(90deg)}
+    100% {-webkit-transform: rotate(450deg);transform: rotate(450deg)}
+}
+
+@-webkit-keyframes spinC {
+    0%   {-webkit-transform: rotate(45deg);transform: rotate(45deg)}
+    100% {-webkit-transform: rotate(405deg);transform: rotate(405deg)}
+}
+
+@keyframes spinC {
+    0%   {-webkit-transform: rotate(45deg);transform: rotate(45deg)}
+    100% {-webkit-transform: rotate(405deg);transform: rotate(405deg)}
+}
+
+@-webkit-keyframes spinD {
+    0%   {-webkit-transform: rotate(135deg);transform: rotate(135deg)}
+    100% {-webkit-transform: rotate(495deg);transform: rotate(495deg)}
+}
+
+@keyframes spinD {
+    0%   {-webkit-transform: rotate(135deg);transform: rotate(135deg)}
+    100% {-webkit-transform: rotate(495deg);transform: rotate(495deg)}
+}
+
+/* INTRODUCTION */
+
+#intro{
+	display: flex;
+	align-items: center;
+	background-color: $darkgray;
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size: cover; /* version standardisée */
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	.intro-content{
+		display: block;
+		margin: 0 auto;
+		img{
+			margin: 0 auto;
+		}
+		h1{
+			font-family: $play;
+			font-size: 40px;
+			text-align: center;
+			color: white;
+			max-width: 420px;
+			margin: 70px auto;
+			font-weight: 700;
+		}
+		#action{
+			font-family: $mont;
+			font-size: 12px;
+			font-weight: 400;
+			text-transform: uppercase;
+			color: white;
+			letter-spacing: 1.1px;
+			display: block;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+			
+
+			i{
+				font-size: 12px;
+				margin: 0 auto;
+				margin-top: 75px;
+				color: white;
+
+			}
+			&:hover i{
+				color: $gold;
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+			}
+
+			&:hover{
+				color: $gold;
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+
+			}
+		}
+	}
+	#visuel-introduction{
+		position: absolute;
+		margin: 0 auto !important;
+		height: 100%;
+		width: auto;
+		visibility:visible;
+
+	}
+}
+
 /* MAISONS HORLOGÈRES */
 .maison{
 	background-color: $lightgold;
@@ -159,7 +363,7 @@
 			-moz-transition: all 0.3s ease-in-out;
 			-o-transition: all 0.3s ease-in-out;
 			transition: all 0.3s ease-in-out;
-								transform: scale(0.9);
+			transform: scale(0.9);
 
 
 
@@ -197,115 +401,115 @@
 @media only screen and (max-width: 40em) {
 	#owl{
 		background-color: pink;
-	} }
+		} }
 
-#owl{
-	background-color: $goldgray;
-	max-height: 445px;
-	.testimonial{
-		#quotee{
-			margin-bottom: 50px;
-			width:50px !important;
-			height: 35px !important;
-			display: block;
-			margin: 0 auto;
-		}
-		.quote{
-			font-style: italic;
-			margin-top: 50px;
-			font-size: 14px;
-			line-height: 24px;
-			letter-spacing: 1.2px;
-			color: $darkgray;
-		}
-		.author{
-			font-weight: 700;
-			color: $darkgray;
-			margin-bottom: 80px;
-		}
-	}
-}
-
-/* RESEAUX SOCIAUX + NEWSLETTER */
-
-.social{
-	#social{
-		height: 375px;
-		article{
-			margin-bottom: 30px;
-			a{
-				-webkit-transition: all 0.3s ease-in-out;
-				-moz-transition: all 0.3s ease-in-out;
-				-o-transition: all 0.3s ease-in-out;
-				transition: all 0.3s ease-in-out;
-				opacity: 0.85;
-				display: block;
-
-				img{
-
+		#owl{
+			background-color: $goldgray;
+			max-height: 445px;
+			.testimonial{
+				#quotee{
+					margin-bottom: 50px;
+					width:50px !important;
+					height: 35px !important;
+					display: block;
+					margin: 0 auto;
 				}
-
-				&:hover{
-					transform: scale(0.97);
-					opacity: 1;
-				}
-			}
-		}
-	}
-	#newsletter{
-		height: 375px;
-		display: flex;
-		align-items: center;
-		.newsletter-content{
-			vertical-align: middle;
-			h3{
-				font-family: $lora;
-				text-align: left;
-				color: $darkgray;
-				margin-bottom: 50px;
-				font-size: 18px;
-				font-weight: 700;
-			}
-			p{
-				text-align: left;
-				margin-bottom: 50px;
-			}
-			input{
-				height: 50px;
-				border: 0.5px solid #d1d1d1;
-				margin-left: 15px;
-			}
-			::-webkit-input-placeholder { color: $mediumgray; font-family: $lora; padding-left: 5px; font-style: italic; letter-spacing: 1px; }
-			::-moz-placeholder { color: $mediumgray; font-family: $lora; padding-left: 5px; font-style: italic; letter-spacing: 1px; } /* firefox 19+ */
-			:-ms-input-placeholder { color:#f00; } /* ie */
-			input:-moz-placeholder { color:#f00; }
-			.abonnement{
-				height: 50px;
-				background-color: $darkgray;
-				text-transform: uppercase;
-				line-height: 40px;
-				font-size: 12px;
-				font-family: $mont;
-				color: white;
-				width:100%;
-				-webkit-transition: all 0.5s ease-in-out;
-				-moz-transition: all 0.5s ease-in-out;
-				-o-transition: all 0.5s ease-in-out;
-				transition: all 0.5s ease-in-out;
-				
-				&:hover{
-					-webkit-transition: all 0.5s ease-in-out;
-					-moz-transition: all 0.5s ease-in-out;
-					-o-transition: all 0.5s ease-in-out;
-					transition: all 0.5s ease-in-out;
-					background-color: white;
-					border: 1px solid $darkgray;
+				.quote{
+					font-style: italic;
+					margin-top: 50px;
+					font-size: 14px;
+					line-height: 24px;
+					letter-spacing: 1.2px;
 					color: $darkgray;
 				}
-
+				.author{
+					font-weight: 700;
+					color: $darkgray;
+					margin-bottom: 80px;
+				}
 			}
 		}
-	}
-}
+
+		/* RESEAUX SOCIAUX + NEWSLETTER */
+
+		.social{
+			#social{
+				height: 375px;
+				article{
+					margin-bottom: 30px;
+					a{
+						-webkit-transition: all 0.3s ease-in-out;
+						-moz-transition: all 0.3s ease-in-out;
+						-o-transition: all 0.3s ease-in-out;
+						transition: all 0.3s ease-in-out;
+						opacity: 0.85;
+						display: block;
+
+						img{
+
+						}
+
+						&:hover{
+							transform: scale(0.97);
+							opacity: 1;
+						}
+					}
+				}
+			}
+			#newsletter{
+				height: 375px;
+				display: flex;
+				align-items: center;
+				.newsletter-content{
+					vertical-align: middle;
+					h3{
+						font-family: $lora;
+						text-align: left;
+						color: $darkgray;
+						margin-bottom: 50px;
+						font-size: 18px;
+						font-weight: 700;
+					}
+					p{
+						text-align: left;
+						margin-bottom: 50px;
+					}
+					input{
+						height: 50px;
+						border: 0.5px solid #d1d1d1;
+						margin-left: 15px;
+					}
+					::-webkit-input-placeholder { color: $mediumgray; font-family: $lora; padding-left: 5px; font-style: italic; letter-spacing: 1px; }
+					::-moz-placeholder { color: $mediumgray; font-family: $lora; padding-left: 5px; font-style: italic; letter-spacing: 1px; } /* firefox 19+ */
+					:-ms-input-placeholder { color:#f00; } /* ie */
+					input:-moz-placeholder { color:#f00; }
+					.abonnement{
+						height: 50px;
+						background-color: $darkgray;
+						text-transform: uppercase;
+						line-height: 40px;
+						font-size: 12px;
+						font-family: $mont;
+						color: white;
+						width:100%;
+						-webkit-transition: all 0.5s ease-in-out;
+						-moz-transition: all 0.5s ease-in-out;
+						-o-transition: all 0.5s ease-in-out;
+						transition: all 0.5s ease-in-out;
+
+						&:hover{
+							-webkit-transition: all 0.5s ease-in-out;
+							-moz-transition: all 0.5s ease-in-out;
+							-o-transition: all 0.5s ease-in-out;
+							transition: all 0.5s ease-in-out;
+							background-color: white;
+							border: 1px solid $darkgray;
+							color: $darkgray;
+						}
+
+					}
+				}
+			}
+		}
 
 
