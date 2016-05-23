@@ -10,7 +10,6 @@ $lightgold: #f4ece2;
 $goldgray: #f8f5f1; /* AVIS CLIENT BG */
 $fontgold: #d5af6d;
 $green: #aae6b8;
-
 /* FONTS*/
 
 $lora: 'Lora', serif;
@@ -80,3 +79,8 @@ p{
 }
 .cycle-pager span.cycle-pager-active { color: #D69746;}
 .cycle-pager > * { cursor: pointer;}
+
+
+.cacher {
+	display: none !important;
+}

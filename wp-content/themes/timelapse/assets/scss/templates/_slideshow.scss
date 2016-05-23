@@ -1,12 +1,15 @@
 .cycle-slideshow {
     height: 480px;
+    overflow: hidden;
 
     article{
         position: relative;
+        min-width: 100%;
 
         img {
             height: auto;
             width: auto;
+
         }
         .slide-content{
             position: absolute;
@@ -108,12 +111,21 @@
 
 #slide1{
     background-color: #f1f1f1;
+    max-height: 480px;
 }
 #slide2{
     background-color: #e6e9ec;
-    ;
+    max-height: 480px;
 }
 
 #slide3{
     background-color: #faf7f5;
+    max-height: 480px;
 }
+
+
+.cycle-slideshow article#slide1 img, .cycle-slideshow article#slide2 img, .cycle-slideshow article#slide3 img {
+    width: 100%;
+}
+
+
