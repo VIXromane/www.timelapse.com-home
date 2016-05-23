@@ -1,13 +1,13 @@
 .products{
 	li{
 		border: 1px solid $light-gray;
+		height: 385px;
 		
 		a{
 			padding:35px;
 			img{
 				display: block;
-				max-height:230px;
-				max-width: 150px;
+				
 				margin:0 auto !important;
 			}
 			h3{
@@ -16,6 +16,7 @@
 				font-weight: 700;
 				line-height: 24px;
 				color: $darkgray;
+				padding:35px;
 			}
 			.price{
 				font-family: $play;
@@ -31,15 +32,23 @@
 .custombutton{
 	opacity:0;
 	transition:0.5s;
+	display: block;
 	width:100%;
-	background:$darkgray !important;
+	background-color:$darkgray !important;
+	height: 50px;
+	border-radius: none !important;
+	font-family: $mont!important;
+	letter-spacing: 1px;
+	font-size: 12px;
+	text-transform: uppercase;
 	color:white !important;
 	position:relative;
 	z-index:12;
 }
 
+
 .fondgris{
-	background:rgba(0,0,0,0.2);
+	background:rgba(0,0,0,0.04);
 	position:absolute;
 	width:100%;
 	height:100%;

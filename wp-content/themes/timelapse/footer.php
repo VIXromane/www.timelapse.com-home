@@ -12,7 +12,7 @@
 
 </section>
 
-<?php if (!is_page(28)){ echo 'Le footer'; } else{ echo 'Je suis sur la page contact'; } ?>
+<?php if (!is_page(28)){ echo ''; } else{ echo 'Je suis sur la page contact'; } ?>
 
 <section class="text-center reassurance"><!-- REASSURANCE-->
 	<div class="row"><!-- contenu -->
@@ -192,64 +192,66 @@
 		</div>
 	</section>
 
-<footer id="footer" class="text-center">
-	<div class="footer-container row">
+	<footer id="footer" class="text-center">
+		<div class="footer-container row">
 
-		<div class="small-12 large-3 columns">
-			<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/complete-logo-timelapse.png" alt="logo full verison Timelapse">
-		</div>
-		<div class="small-12 large-3 columns">
-			<ul>
-				<li><a href="#"><strong>Informations</strong></a></li>
-				<li><a href="#">À propos de nous</a></li>
-				<li><a href="#">Contactez nous</a></li>
-				<li><a href="#">Confidentialité</a></li>
-				<li><a href="#">Plan du site</a></li>
-				<li><a href="#">Crédits</a></li>
-			</ul>
-		</div>
-		<div class="small-12 large-3 columns">
-			<ul>
-				<li><a href="#"><strong>Aide et assistance</strong></a></li>
-				<li><a href="#">Mentions légales</a></li>
-				<li><a href="#">Livraisons et retours</a></li>
-				<li><a href="#">Garantie Timelapse</a></li>
-				<li><a href="#">Transactions sécurisés</a></li>
-				<li><a href="#">CGV</a></li>
-			</ul>
-		</div>
-		<div class="small-12 large-3 columns">
-			<ul>
-				<li><a href="#"><strong>Suivez-nous</strong></a></li>
-				<li><a href="#">Réseaux sociaux</a>
-					<ul>
-						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
-						</a></li>
-						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
-						</a></li>
-						<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
-						</a></li>
-						<li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i>
-						</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Newsletter</a></li>
-				<li><a href="#">Journal Timelapse</a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-			</ul>
-		</div>
+			<div class="small-12 large-3 columns">
+				<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/complete-logo-timelapse.png" alt="logo full verison Timelapse">
+			</div>
+			<div class="small-12 large-3 columns marge">
+				<h5>Informations</h5>
+				<ul>
+					<li><a href="#">À propos de nous</a></li>
+					<li><a href="#">Contactez nous</a></li>
+					<li><a href="#">Confidentialité</a></li>
+					<li><a href="#">Plan du site</a></li>
+					<li><a href="#">Crédits</a></li>
+				</ul>
+			</div>
+			<div class="small-12 large-3 columns marge">
+				<h5>Aide et assistance</h5>
+				<ul>
+					<li><a href="#">Mentions légales</a></li>
+					<li><a href="#">Livraisons et retours</a></li>
+					<li><a href="#">Garantie Timelapse</a></li>
+					<li><a href="#">Transactions sécurisés</a></li>
+					<li><a href="#">CGV</a></li>
+				</ul>
+			</div>
+			<div class="small-12 large-3 columns marge">
+				<h5>Suivez-nous</h5>
+				<ul>
+					<li><a href="#">Réseaux sociaux</a>
+						<ul id="social-list">
+							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+							</a></li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+							</a></li>
+							<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+							</a></li>
+							<li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i>
+							</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Newsletter</a></li>
+					<li><a href="#">Journal Timelapse</a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</div>
 
 
-		<?php do_action( 'foundationpress_before_footer' ); ?>
-		<?php dynamic_sidebar( 'footer-widgets' ); ?>
-		<?php do_action( 'foundationpress_after_footer' ); ?>
-	</footer>
-</div>
+			<?php do_action( 'foundationpress_before_footer' ); ?>
+			<?php dynamic_sidebar( 'footer-widgets' ); ?>
+			<?php do_action( 'foundationpress_after_footer' ); ?>
+		</footer>
+		<section id="post-foot">
+			<div><p>2016 - Tous droits réservés - <strong>Timelapse ©</strong></p></div>
+		</section>
 
-<?php do_action( 'foundationpress_layout_end' ); ?>
+	<?php do_action( 'foundationpress_layout_end' ); ?>
 
-<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) == 'offcanvas' ) : ?>
+	<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) == 'offcanvas' ) : ?>
 </div><!-- Close off-canvas wrapper inner -->
 </div><!-- Close off-canvas wrapper -->
 </div><!-- Close off-canvas content wrapper -->
@@ -260,18 +262,20 @@
 
 
 <!-- <script src="assets/components/jquery-cycle2/src/jquery.cycle2.js"></script>
-<script src="assets/components/jquery-cycle2/src/jquery.cycle2.carousel.js"></script> -->
+	<script src="assets/components/jquery-cycle2/src/jquery.cycle2.carousel.js"></script> -->
 
-<?php wp_footer(); ?>
-<?php do_action( 'foundationpress_before_closing_body' ); ?>
-
-
+	<?php wp_footer(); ?>
+	<?php do_action( 'foundationpress_before_closing_body' ); ?>
 
 
-<!-- Sript disparition visuel intro -->
+
+	<!-- Sript disparition visuel intro -->
 	<script>
+
 	$("a.removeme").click(function() {
-		 $("#intro").remove();
+		$("#intro").fadeOut(600, function(){
+			(this).remove();
+		});
 	});
 
 	</script>

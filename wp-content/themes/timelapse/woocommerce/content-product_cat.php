@@ -42,6 +42,7 @@ $woocommerce_loop['loop']++;
 	 * @hooked woocommerce_template_loop_category_link_open - 10
 	 */
 	do_action( 'woocommerce_before_subcategory', $category );
+	/*add_action()*/
 
 	/**
 	 * woocommerce_before_subcategory_title hook.

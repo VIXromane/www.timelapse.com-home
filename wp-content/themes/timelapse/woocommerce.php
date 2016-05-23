@@ -1,6 +1,6 @@
 <section class="adieu" id="intro">
 
-	<div id="visu-intro" class="animated fadeIn">
+	<div id="visu-intro">
 		<div id="circles">
 			<div id="point1" class="points"></div>
 			<div id="point2" class="points"></div>
