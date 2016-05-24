@@ -7,7 +7,7 @@ data-cycle-slides=">article">
 <a href="#">
     <article id="slide1">
         <img id="quotee" src="<?= _URL_IMAGES; ?>/_visuels_dyns/slide-1.jpg" alt="HEART BEAT MANUFACTURE SLIDE" />
-        <div class="slide-content">
+        <div class="slide-content medium-6 small-6 columns">
             <h2>Heart Beat Manufacture</h2>
             <p>La maison horlogère suisse <strong>Frédérique Constant</strong> célèbre la première décennie de son mouvement emblématique <strong>Heart Beat Manufacture</strong> avec une édition anniversaire proposée en seulement quelques exemplaires à travers la planète.</p>
             <a href="#" class="link">

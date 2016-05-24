@@ -8,6 +8,7 @@
 	width: 100%;
 	opacity: 0.2;
 	position: absolute;
+	overflow: hidden;
 }
 #circles{
 	height: 1000px;
@@ -255,7 +256,7 @@
 			transition: all 0.3s ease-in-out;
 			opacity: 0.85;
 			img{
-				
+				margin: 0 auto !important;
 			}
 			div{
 				z-index:10;

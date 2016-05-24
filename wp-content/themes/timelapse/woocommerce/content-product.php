@@ -50,7 +50,7 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 ?>
 <li <?php post_class( $classes ); ?>>
 
-	<?php
+	<?php 
 	/**
 	 * woocommerce_before_shop_loop_item hook.
 	 *
@@ -64,6 +64,7 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 	 * @hooked woocommerce_show_product_loop_sale_flash - 10
 	 * @hooked woocommerce_template_loop_product_thumbnail - 10
 	 */
+
 	do_action( 'woocommerce_before_shop_loop_item_title' );
 
 	/**
@@ -71,6 +72,10 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 	 *
 	 * @hooked woocommerce_template_loop_product_title - 10
 	 */
+		$name = get_the_terms($product->ID, 'product_cat');
+		echo '<span class="mycat">'.$name[0]->name.'</span>';
+
+		//echo $product->get_categories( ', ', '<span class="tt">', '</span>' );
 	do_action( 'woocommerce_shop_loop_item_title' );
 
 	/**
@@ -80,6 +85,7 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 	 * @hooked woocommerce_template_loop_price - 10
 	 */
 	do_action( 'woocommerce_after_shop_loop_item_title' );
+
 
 	/**
 	 * woocommerce_after_shop_loop_item hook.

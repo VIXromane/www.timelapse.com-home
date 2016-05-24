@@ -1,10 +1,14 @@
 .cycle-slideshow {
     height: 480px;
     overflow: hidden;
+        @include breakpoint(medium only){
+        height:345px;
+    }
 
     article{
         position: relative;
         min-width: 100%;
+
 
         img {
             height: auto;
@@ -16,12 +20,32 @@
             top:45px;
             right:50px;
             max-width: 600px;
+            padding-left:20px;
+            @include breakpoint(medium){
+                postion: absolute;
+                width:50%;
+                margin-left:25px;
+            }
+            @include breakpoint(small only){
+                postion: absolute;
+                width:80%;
+                margin-left:25px;
+                margin-top:100px;
+            }
             h2 {
                 text-align: left;
                 font-size: 60px;
-                max-width: 500px;
+                max-width: 400px;
                 line-height: 70px;
                 color: $darkgray;
+                @include breakpoint(small only){
+                    font-size: 20px;
+                    line-height:30px;
+                }
+                @include breakpoint(medium only){
+                    font-size: 30px;
+                    line-height:40px;
+                }
             }
             p{
 
@@ -77,6 +101,12 @@
             margin: 0 auto;
             width:100px;
             margin-top: -50px;
+            @include breakpoint(small only){
+               display:none;
+            }
+            @include breakpoint(medium only){
+               display:none;
+            }
 
             span{
                 width: 12px;
@@ -111,21 +141,29 @@
 
 #slide1{
     background-color: #faf7f5 ;
-    max-height: 480px;
+    height:100%;
 }
 #slide2{
     background-color: #e6e9ec;
-    max-height: 480px;
+     height:100%;;
 }
 
 #slide3{
     background-color:#f1f1f1 ;
-    max-height: 480px;
+     height:100%;
 }
 
 
 .cycle-slideshow article#slide1 img, .cycle-slideshow article#slide2 img, .cycle-slideshow article#slide3 img {
     width: 100%;
+    height: auto;
+
+}
+
+@include breakpoint(small only){
+     .slide-content h2{
+        color: pink;
+     }
 }
 
 

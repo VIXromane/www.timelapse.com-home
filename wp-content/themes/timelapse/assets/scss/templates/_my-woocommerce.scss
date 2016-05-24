@@ -1,22 +1,26 @@
 .products{
 	li{
 		border: 1px solid $light-gray;
-		height: 385px;
+		height: 395px;
+		@include breakpoint(small only){
+			height: 300px;
+		}
 		
 		a{
-			padding:35px;
+			padding:30px;
 			img{
 				display: block;
 				
 				margin:0 auto !important;
+				margin-bottom: 10px;
 			}
 			h3{
 				font-family: $lora;
-				font-size: 12px;
+				font-size: 12px !important;
 				font-weight: 700;
 				line-height: 24px;
 				color: $darkgray;
-				padding:35px;
+				padding:30px;
 			}
 			.price{
 				font-family: $play;
@@ -29,6 +33,20 @@
 	}
 }
 
+.mycat{
+	font-family: $mont;
+	color: $darkgray;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.etat-dispo{
+	color: $green;
+	font-family: $mont !important;
+	font-weight: 700;
+
+}
+
 .custombutton{
 	opacity:0;
 	transition:0.5s;
@@ -36,14 +54,29 @@
 	width:100%;
 	background-color:$darkgray !important;
 	height: 50px;
-	border-radius: none !important;
+	line-height: 28px !important;
+	border-radius: 0px !important;
 	font-family: $mont!important;
 	letter-spacing: 1px;
 	font-size: 12px;
 	text-transform: uppercase;
 	color:white !important;
-	position:relative;
+	position:absolute !important;
+	bottom:0;
+	left:0 !important;
 	z-index:12;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+
+	&:hover{
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		background-color: $gold !important;
+	}
 }
 
 
