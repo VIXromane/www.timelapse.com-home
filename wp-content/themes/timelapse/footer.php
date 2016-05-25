@@ -17,11 +17,11 @@
 <section class="text-center reassurance"><!-- REASSURANCE-->
 	<div class="row"><!-- contenu -->
 		<div class="text-center">
-			<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/circle-logo-timelapse.png" alt="logo timelapse rond reassurance" id="circle-logo"/>
+			<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/circle-logo-timelapse.png" alt="logo timelapse rond reassurance" id="circle-logo"/>
 		</div>
 
-		<div class="small-12 large-3 columns">
-			<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/authenticity.png" alt="authenticité et tracabilité des produits">
+		<div class="small-12 medium-3 columns">
+			<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/authenticity.png" alt="authenticité et tracabilité des produits">
 			<h3>
 				AUTHENTICITÉ ET TRACABILITÉ
 			</h3>
@@ -30,8 +30,8 @@
 			</p>
 		</div>
 
-		<div class="small-12 large-3 columns">
-			<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/garantie.png" alt="garantie 12 mois timelapse">
+		<div class="small-12 medium-3 columns">
+			<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/garantie.png" alt="garantie 12 mois timelapse">
 			<h3>
 				GARANTIE TIMELAPSE
 			</h3>
@@ -40,8 +40,8 @@
 			</p>
 		</div>
 
-		<div class="small-12 large-3 columns">
-			<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/secured-payment.png" alt="paiements en ligne sécurisés">
+		<div class="small-12 medium-3 columns">
+			<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/secured-payment.png" alt="paiements en ligne sécurisés">
 			<h3>
 				PAIEMENT SÉCURISÉ
 			</h3>
@@ -50,8 +50,8 @@
 			</p>
 		</div>
 
-		<div class="small-12 large-3 columns">
-			<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/delivery.png" alt="livraisons et retours sécurisés">
+		<div class="small-12 medium-3 columns">
+			<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/delivery.png" alt="livraisons et retours sécurisés">
 			<h3>
 				LIVRAISONS ET RETOURS
 			</h3>
@@ -76,7 +76,7 @@
 		data-cycle-slides=">article">
 
 		<article class="large-12 columns testimonial" id="#quote1"> <!-- QUOTE 1-->
-			<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/quote.png" alt="citation 1 testimoniaux clients timelapse">
+			<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/quote.png" alt="citation 1 testimoniaux clients timelapse">
 
 			<div class="large-12 columns">
 				<p class="hide-for-small-only large-2 columns"></p>
@@ -96,7 +96,7 @@
 		</article>
 
 		<article class="large-12 columns testimonial" id="#quote2"><!-- QUOTE 2-->
-			<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/quote.png" alt="citation 2 testimoniaux clients timelapse">
+			<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/quote.png" alt="citation 2 testimoniaux clients timelapse">
 
 			<div class="large-12 columns">
 				<p class="hide-for-small-only large-2 columns"></p>
@@ -116,7 +116,7 @@
 		</article>
 
 		<article class="large-12 columns testimonial" id="#quote3"><!-- QUOTE 3-->
-			<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/quote.png" alt="citation 3 testimoniaux clients timelapse">
+			<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/quote.png" alt="citation 3 testimoniaux clients timelapse">
 
 			<div class="large-12 columns">
 				<p class="hide-for-small-only large-2 columns"></p>
@@ -142,33 +142,33 @@
 <section class="text-center social"><!-- SOCIAL NETWORKS + NEWSLETTER-->
 	<div class="row"><!-- contenu -->
 		<h2>Restez à l’heure de l’actualité Timelapse</h2>
-		<div id="social" class="small-12 large-4 columns">
+		<div id="social" class="small-12 medium-4 columns">
 			<div class="row">
-				<article class="small-6 large-6 columns">
+				<article class="small-6 medium-6 columns">
 					<a href="#">
-						<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/social-fb.jpg" alt="facebook timelapse">
+						<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/social-fb.jpg" alt="facebook timelapse">
 					</a>
 				</article>
-				<article class="small-6 large-6 columns">
+				<article class="small-6 medium-6 columns">
 					<a href="#">
-						<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/social-twitter.jpg" alt="twitter timelapse">
+						<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/social-twitter.jpg" alt="twitter timelapse">
 					</a>
 				</article>
 			</div>
 			<div class="row">
-				<article class="small-6 large-6 columns">
+				<article class="small-6 medium-6 columns">
 					<a href="#">
-						<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/social-insta.jpg" alt="instagram timelapse">
+						<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/social-insta.jpg" alt="instagram timelapse">
 					</a>
 				</article>
-				<article class="small-6 large-6 columns">
+				<article class="small-6 medium-6 columns">
 					<a href="#">
-						<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/social-pinterest.jpg" alt="pinterest timelapse">
+						<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/social-pinterest.jpg" alt="pinterest timelapse">
 					</a>
 				</article>
 			</div>
 		</div>
-		<div id="newsletter" class="small-12 large-7 large-offset-1 columns">
+		<div id="newsletter" class="small-12 medium-7 medium-offset-1 columns">
 			<div class="newsletter-content">
 				<h3>NEWSLETTER</h3>
 
@@ -195,10 +195,10 @@
 	<footer id="footer" class="text-center">
 		<div class="footer-container row">
 
-			<div class="small-12 large-3 columns">
-				<img src="<?= _URL_IMAGES; ?>/_visuels_dyns/complete-logo-timelapse.png" alt="logo full verison Timelapse">
+			<div class="small-12 medium-3 columns">
+				<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/complete-logo-timelapse.png" alt="logo full verison Timelapse">
 			</div>
-			<div class="small-12 large-3 columns marge">
+			<div class="small-12 medium-3 columns marge">
 				<h5>Informations</h5>
 				<ul>
 					<li><a href="#">À propos de nous</a></li>
@@ -208,7 +208,7 @@
 					<li><a href="#">Crédits</a></li>
 				</ul>
 			</div>
-			<div class="small-12 large-3 columns marge">
+			<div class="small-12 medium-3 columns marge">
 				<h5>Aide et assistance</h5>
 				<ul>
 					<li><a href="#">Mentions légales</a></li>
@@ -218,7 +218,7 @@
 					<li><a href="#">CGV</a></li>
 				</ul>
 			</div>
-			<div class="small-12 large-3 columns marge">
+			<div class="small-12 medium-3 columns marge">
 				<h5>Suivez-nous</h5>
 				<ul>
 					<li><a href="#">Réseaux sociaux</a>

@@ -1,0 +1,115 @@
+/*** GLOBAL ***/
+
+.woocommerce-breadcrumb{
+	display: block;
+	font-family: $lora;
+	font-size: 11px;
+	color: $mediumgray;
+			margin-bottom: 10px;
+
+	a{
+		font-family: $lora;
+		color: $mediumgray;
+		font-weight: 700;
+					-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+
+			&:hover{
+							-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+			color: $darkgray;
+			}
+	}
+}
+.ariane{
+	border-bottom: 1px solid $lightgray;
+	margin-top: 15px;
+}
+
+.entry-title{
+	font-family: $play;
+	color: $darkgray;
+	font-size: 50px;
+	font-weight: 700;
+	padding: 30px 0px 50px 0px;
+	border-bottom: 1px solid $lightgray;
+	
+}
+
+
+/*** PAGE A PROPOS ***/
+
+
+#intro-about{
+	
+	height: 180px; 
+	width: 100%;
+	margin-top: -20px;
+	background-color: $darkgray;
+/*	background-color: url(../images/_visuels/frise.jpg) center center;
+*/	padding: 0px !important;
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+
+
+
+	img{
+		height:auto !important;
+	}
+	p{
+		color: white;
+		font-size: 14px;
+		line-height: 22px;
+		letter-spacing: 1px;
+		padding: 20px 0px;
+		margin-bottom: 0px;
+	}
+}
+
+.info{
+	margin: 0px 100px;
+	@include breakpoint(medium only){
+		margin: 0px;
+	}
+	@include breakpoint(small only){
+		margin: 0px;
+	}
+	img{
+		margin-bottom: 50px;
+
+	}
+	article{
+		vertical-align: middle;
+		h6{
+			height: 90px;
+			padding-left:15px;
+			border-left: 2px solid $gold;
+			font-family: $play;
+			font-size: 30px;
+			font-weight: 700;
+			margin:50px 0px;
+			line-height: 40px;
+		@include breakpoint(medium only){
+		margin-top: 0px;
+		margin-bottom: 20px;
+		height: auto;
+	}
+		}
+		p{
+
+		}
+	}
+}
+
+
+
+
+
+
+
+

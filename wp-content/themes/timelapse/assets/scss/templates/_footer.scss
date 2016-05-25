@@ -9,13 +9,19 @@
 			font-size: 12px;
 			text-align: left;
 			text-transform: uppercase;
-
+			@include breakpoint(small only){
+				text-align: center;
+			}
 
 		}
 		ul{
 			list-style: none;
 			text-align: left;
 			margin: 0px !important;
+			@include breakpoint(small only){
+				text-align: center;
+				margin-bottom: 50px !important;
+			}
 
 			li{
 				a{
@@ -61,8 +67,13 @@
 #social-list{
 	display: block;
 	display: flex;
-	margin: 0px!important;
-	margin-left: -50px !important;
+	margin: 0px !important;
+	border: 2px solid yellow;
+	width:80px !important;
+
+				@include breakpoint(small only){
+				display: none;
+			}
 }
 .fa{
 	display: inline-block !important;

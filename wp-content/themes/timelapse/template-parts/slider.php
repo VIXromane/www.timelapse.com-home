@@ -6,7 +6,7 @@ data-cycle-slides=">article">
 
 <a href="#">
     <article id="slide1">
-        <img id="quotee" src="<?= _URL_IMAGES; ?>/_visuels_dyns/slide-1.jpg" alt="HEART BEAT MANUFACTURE SLIDE" />
+        <img id="quotee" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/slide-1.jpg" alt="HEART BEAT MANUFACTURE SLIDE" />
         <div class="slide-content medium-6 small-6 columns">
             <h2>Heart Beat Manufacture</h2>
             <p>La maison horlogère suisse <strong>Frédérique Constant</strong> célèbre la première décennie de son mouvement emblématique <strong>Heart Beat Manufacture</strong> avec une édition anniversaire proposée en seulement quelques exemplaires à travers la planète.</p>
@@ -24,7 +24,7 @@ data-cycle-slides=">article">
 
 <a href="#">
      <article id="slide2">
-        <img src="<?= _URL_IMAGES; ?>/_visuels_dyns/slide-2.jpg" alt="HEART BEAT MANUFACTURE SLIDE" />
+        <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/slide-2.jpg" alt="HEART BEAT MANUFACTURE SLIDE" />
         <div class="slide-content">
             <h2>Zenith El Primero</h2>
             <p>Des finitions <strong>Côtes de Genève</strong> pour le modèle phare de la maison <strong>Zenith</strong>.
@@ -44,7 +44,7 @@ data-cycle-slides=">article">
 
 <a href="#">
      <article id="slide3">
-        <img src="<?= _URL_IMAGES; ?>/_visuels_dyns/slide-3.jpg" alt="HEART BEAT MANUFACTURE SLIDE" />
+        <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/slide-3.jpg" alt="HEART BEAT MANUFACTURE SLIDE" />
         <div class="slide-content">
             <h2>L'heure du premier jour</h2>
             <p>Le premier jour, C’est le moment où je t’ai dit je t’aime. C’est l’heure où je t’ai dit je t’aime. La montre "L'heure du premier jour" fait son apparition sur <strong>Timelapse</strong>. Une exclusivité signée <strong>Mauboussin</strong>.

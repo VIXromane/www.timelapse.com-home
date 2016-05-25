@@ -34,9 +34,7 @@
  * @since FoundationPress 1.0.0
  */
 
-/*
-Template Name: Home
-*/
+
 
 
 get_header(); ?>
