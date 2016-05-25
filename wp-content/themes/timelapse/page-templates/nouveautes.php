@@ -6,7 +6,7 @@ get_header(); ?>
 
 <?php get_template_part( 'template-parts/featured-image' ); ?>
 
-<div id="page-full-width" role="main">
+<!-- <div id="page-full-width" role="main">
 
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
@@ -32,6 +32,15 @@ get_header(); ?>
 
 <?php do_action( 'foundationpress_after_content' ); ?>
 
+</div> -->
+<div class="small-12 large-12 columns ariane">
+  <?php woocommerce_breadcrumb(); ?>
 </div>
+
+<header class="small-12 large-12 columns text-center">
+  <h1 class="entry-title"><?php the_title(); ?></h1>
+</header>
+
+je suis sur la page nouveautés
 
 <?php get_footer();
