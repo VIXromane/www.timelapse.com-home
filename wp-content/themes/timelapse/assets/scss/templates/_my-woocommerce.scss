@@ -1,9 +1,18 @@
+.listing-produits{
+	display: table;
+}
+
 
 .produit{
 	border: 1px solid $light-gray;
 	position:relative;
 	overflow:hidden;
+	display: table-cell;
 	transform: scale(0.9);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 
 	a{
 
@@ -104,6 +113,10 @@
 	opacity:0;
 	z-index:9;
 	transition:0.5s;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .fondgris-home{
@@ -116,6 +129,10 @@
 	opacity:0;
 	z-index:9;
 	transition:0.5s;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .linkproduct{

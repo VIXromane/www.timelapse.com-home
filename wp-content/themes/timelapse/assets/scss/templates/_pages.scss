@@ -50,25 +50,26 @@
 	width: 100%;
 	margin-top: -20px;
 	background-color: $darkgray;
-/*	background-color: url(../images/_visuels/frise.jpg) center center;
-*/	padding: 0px !important;
-display: flex;
-align-items: center;
-margin-bottom: 50px;
+	background-image: url("../images/_visuels/pattern.jpg");
+
+	padding: 0px !important;
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
 
 
 
-img{
-	height:auto !important;
-}
-p{
-	color: white;
-	font-size: 14px;
-	line-height: 22px;
-	letter-spacing: 1px;
-	padding: 20px 0px;
-	margin-bottom: 0px;
-}
+	img{
+		height:auto !important;
+	}
+	p{
+		color: white;
+		font-size: 14px;
+		line-height: 22px;
+		letter-spacing: 1px;
+		padding: 20px 0px;
+		margin-bottom: 0px;
+	}
 }
 
 .info{
@@ -108,27 +109,128 @@ p{
 
 
 /*** PAGE CONTACT ***/
+.intro-contact{
+	font-weight: 700 !important;
+	padding:50px;
+}
 
 #blackandwhite{
-	background-color: url('../../images/_visuels/contact-bg.jpg');
-	height: 100%;
-	width: 100%;
-	border: 2px solid blue;
+	background-image: url("../images/_visuels/contact-bg.jpg");
 	padding: 0px !important;
 	margin-bottom: 50px;
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size: cover; /* version standardisée */
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+
 
 	.black{
-	background-color: $darkgray;
-	opacity: 0.9;
-	padding: 50px 0px;
+		background-color: $darkgray;
+		opacity: 0.95;
+		padding: 50px 0px;
+
+		form{
+			label{
+				font-family: $mont;
+				color: white;
+				font-size: 12px;
+				
+			}
+
+			option{
+				font-size: 12px;
+				font-family: $mont;
+				color: $darkgray;
+			}
+			.send{
+				height: 50px;
+				background-color: $gold;
+				text-transform: uppercase;
+				line-height: 30px;
+				font-size: 12px;
+				font-family: $mont;
+				color: $darkgray;
+				width:100%;
+				-webkit-transition: all 0.5s ease-in-out;
+				-moz-transition: all 0.5s ease-in-out;
+				-o-transition: all 0.5s ease-in-out;
+				transition: all 0.5s ease-in-out;
+				margin-left: -15px;
+				min-width: 170px;
+				margin-top: 40px;
+
+				&:hover{
+					-webkit-transition: all 0.5s ease-in-out;
+					-moz-transition: all 0.5s ease-in-out;
+					-o-transition: all 0.5s ease-in-out;
+					transition: all 0.5s ease-in-out;
+					background-color: $darkgray;
+					border: 2px solid $gold;
+					color: $white;
+				}
+
+				@include breakpoint(small only){
+					width: 100%;
+				}
+
+			}
+			input{
+
+			}
+			::-webkit-input-placeholder { color: $mediumgray; font-family: $lora; padding-left: 5px; font-style: italic; letter-spacing: 1px; font-size: 12px; }
+			::-moz-placeholder { color: $mediumgray; font-family: $lora; padding-left: 5px; font-style: italic; letter-spacing: 1px; font-size: 12px; } /* firefox 19+ */
+			:-ms-input-placeholder { color:#f00; font-size: 12px; } /* ie */
+			input:-moz-placeholder { color:#f00; font-size: 12px; }
+		}
 	}
 	.white{
-	background-color: white;
-	opacity: 0.93;
-	padding: 50px 0px;
+		background-color: white;
+		height: 100% !important;
+		opacity: 0.95;
+		padding: 50px 0px;
+
+		h3{
+			font-family: $mont;
+			color: $darkgray;
+			font-size: 14px;
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+
+		p{
+			margin-top: 22px;
+		}
+		a{
+			color: $darkgray !important;
+			font-weight: bold;
+			-webkit-transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			-o-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;
+
+			&:hover{
+				color: $gold !important;
+				-webkit-transition: all 0.5s ease-in-out;
+				-moz-transition: all 0.5s ease-in-out;
+				-o-transition: all 0.5s ease-in-out;
+				transition: all 0.5s ease-in-out;
+			}
+
+		}
 	}
 
 }
+hr{
+	margin: 50px 0px;
+}
 
-
+.content{
+	@include breakpoint(small only){
+		margin: 30px;
+	}
+}
 

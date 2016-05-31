@@ -40,7 +40,7 @@ get_header(); ?>
   <h1 class="entry-title"><?php the_title(); ?></h1>
   <div class="large-12 columns text-center">
     <p class="hide-for-small-only large-2 columns"></p>
-    <p class="intro small-12 large-8 columns">
+    <p class="intro-contact small-12 large-8 columns">
       Notre équipe est à votre disposition pour répondre à vos questions et vous apporter l’aide nécessaire. 
       Avant de nous contacter, nous vous invitons à consulter les liens ci-dessous. 
     </p>
@@ -52,7 +52,7 @@ get_header(); ?>
 
   <article class="black medium-6 small-12 columns"> <!-- encart noir formulaire de contact -->
 
-    <div class="row medium-9 colums">
+    <div class="row medium-9 colums content">
 
       <form action="">
 
@@ -76,7 +76,7 @@ get_header(); ?>
        </div>
 
        <div class="row">
-        <label>Sujet de la demande
+        <label for="sujet">Sujet de la demande
           <select>
             <option value="husker">Service clientèle</option>
             <option value="starbuck">Retours et échanges</option>
@@ -93,7 +93,7 @@ get_header(); ?>
       </div>
 
       <div class="row large-6 columns">
-        <a href="#" class="abonnement button postfix">Envoyer</a>
+        <a href="#" class="send button postfix">Envoyer</a>
       </div>
 
     </form>
@@ -102,24 +102,20 @@ get_header(); ?>
 </article>
 
 <article class="white medium-6 small-12 columns"><!-- encart blanc liens utiles -->
-  <div class="row medium-10 colums">
+  <div class="row medium-10 colums content">
 
-    <strong>FAQ</strong>
+    <h3>FAQ</h3>
     <p>
-      Consultez les réponses aux questions les plus souvent posées par nos clients dans notre FAQ (foire aux questions).
+      Consultez les réponses aux questions les plus souvent posées par nos clients dans notre <a href="#"><u>FAQ</u></a> (foire aux questions).
     </p>
 
-    <strong>Retours et échanges</strong>
+    <h3>Retours et échanges</h3>
     <p>
-      Voir nos conditions de retours et d’échange.
+      Voir nos <a href="#"><u>conditions de retours et d’échange</u></a>.
     </p>
 
-    <strong>Paiement sécurisé</strong>
-    <p>
-      Voir nos conditions de retours et d’échange.
-    </p>
 
-    <strong>Paiement sécurisé</strong>
+    <h3>Paiement sécurisé</h3>
     <p>
       Toutes les transitions effectuées sur le site sont 100% sécurisées.
     </p>
@@ -127,10 +123,10 @@ get_header(); ?>
     <p>
       Merci de prendre en compte que nous répondons généralement à toute demande sous 1 à 2 jours ouvrés. 
     </p>
-    <p>
+    <p><strong>
       Service client</br>
       03 88 03 03 03</br>
-      bonjour@timelapse.fr</br>
+      bonjour@timelapse.fr</br></strong>
 
     </p>
 

@@ -61,22 +61,31 @@
 		text-align: center;
 		letter-spacing:1px;
 		padding:15px;
+		margin-bottom: 0px;
 	}
 }
 
 #social-list{
-	display: block;
-	display: flex;
 	margin: 0px !important;
-	border: 2px solid yellow;
-	width:80px !important;
+li {
+	display: inline-block;
+}
+@include breakpoint(small only){
+	width: 100%;
+}
 
-				@include breakpoint(small only){
-				display: none;
-			}
 }
 .fa{
 	display: inline-block !important;
 	margin-right: 10px;
 	font-size: 13px;
+}
+
+/*Permet de regler le petit bug d'affichage sur le formulaire d'inscription à la newsletter*/
+.row .row.collapse {
+    margin-left: 0;
+    margin-right: 15px;
+}
+.container {
+	overflow: hidden;
 }

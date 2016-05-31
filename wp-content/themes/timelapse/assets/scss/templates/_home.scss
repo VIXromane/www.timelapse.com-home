@@ -1,5 +1,9 @@
 /* CSS HOME PAGE */
 
+.listing-produits{
+	display: table;
+}
+
 /* ANIMATION INTRO */
 
 #visu-intro{
@@ -150,6 +154,7 @@
 		margin: 0 auto;
 		img{
 			margin: 0 auto;
+			margin-top:-50px;
 		}
 		h1{
 			font-family: $play;
@@ -496,15 +501,15 @@
 						border: 0.5px solid #d1d1d1;
 						margin-left: 15px;
 					}
-					::-webkit-input-placeholder { color: $mediumgray; font-family: $lora; padding-left: 5px; font-style: italic; letter-spacing: 1px; }
-					::-moz-placeholder { color: $mediumgray; font-family: $lora; padding-left: 5px; font-style: italic; letter-spacing: 1px; } /* firefox 19+ */
-					:-ms-input-placeholder { color:#f00; } /* ie */
-					input:-moz-placeholder { color:#f00; }
+					::-webkit-input-placeholder { color: $mediumgray; font-family: $lora; padding-left: 5px; font-style: italic; letter-spacing: 1px; font-size: 12px; }
+					::-moz-placeholder { color: $mediumgray; font-family: $lora; padding-left: 5px; font-style: italic; letter-spacing: 1px;font-size: 12px; } /* firefox 19+ */
+					:-ms-input-placeholder { color:#f00; font-size: 12px; } /* ie */
+					input:-moz-placeholder { color:#f00; font-size: 12px; }
 					.abonnement{
 						height: 50px;
 						background-color: $darkgray;
 						text-transform: uppercase;
-						line-height: 40px;
+						line-height: 30px;
 						font-size: 12px;
 						font-family: $mont;
 						color: white;
@@ -529,4 +534,13 @@
 			}
 		}
 
-
+.titre{
+	height:100px;
+	line-height: 100px;
+	vertical-align: baseline;
+}
+.filet{
+	height: 1px;
+	color: $lightgray;
+	vertical-align: baseline;
+}

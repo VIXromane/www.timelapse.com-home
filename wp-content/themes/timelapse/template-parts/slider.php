@@ -1,15 +1,15 @@
-<div class="slide cycle-slideshow"
+<div class="slide sliider cycle-slideshow"
 data-cycle-fx="carousel"
 data-cycle-speed="400"
 data-cycle-timeout="3500"
 data-cycle-slides=">article">
 
 <a href="#">
-    <article id="slide1">
+    <article id="slide1" class="large-12 medium-12 small-12 columns">
         <img id="quotee" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/slide-1.jpg" alt="HEART BEAT MANUFACTURE SLIDE" />
         <div class="slide-content medium-6 small-6 columns">
             <h2>Heart Beat Manufacture</h2>
-            <p>La maison horlogère suisse <strong>Frédérique Constant</strong> célèbre la première décennie de son mouvement emblématique <strong>Heart Beat Manufacture</strong> avec une édition anniversaire proposée en seulement quelques exemplaires à travers la planète.</p>
+            <p>La maison horlogère suisse <strong>Frédérique Constant</strong> célèbre la première décennie de son mouvement emblématique <strong>Heart Beat Manufacture</strong> avec une édition anniversaire proposée en seulement quelques exemplaires.</p>
             <a href="#" class="link">
                 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>DÉCOUVRIR LE MODÈLE
             </a>
@@ -46,7 +46,7 @@ data-cycle-slides=">article">
      <article id="slide3">
         <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/slide-3.jpg" alt="HEART BEAT MANUFACTURE SLIDE" />
         <div class="slide-content">
-            <h2>L'heure du premier jour</h2>
+            <h2>Montblanc automatic</h2>
             <p>Le premier jour, C’est le moment où je t’ai dit je t’aime. C’est l’heure où je t’ai dit je t’aime. La montre "L'heure du premier jour" fait son apparition sur <strong>Timelapse</strong>. Une exclusivité signée <strong>Mauboussin</strong>.
             </p>
             <a href="#" class="link">

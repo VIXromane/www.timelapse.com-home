@@ -1,13 +1,15 @@
-.cycle-slideshow {
-    height: 480px;
-    overflow: hidden;
-        @include breakpoint(medium only){
-        height:345px;
+.sliider {
+/*    height: 480px;
+*/    overflow: hidden;
+
+    @include breakpoint(small only){
+        display: none;
     }
 
     article{
         position: relative;
         min-width: 100%;
+        padding: 0px;
 
 
         img {
@@ -17,12 +19,12 @@
         }
         .slide-content{
             position: absolute;
-            top:45px;
+            top:60px;
             right:50px;
             max-width: 600px;
             padding-left:20px;
             @include breakpoint(medium){
-                postion: absolute;
+                top:0px;
                 width:50%;
                 margin-left:25px;
             }
@@ -30,7 +32,7 @@
                 postion: absolute;
                 width:80%;
                 margin-left:25px;
-                margin-top:100px;
+                /* margin-top:100px;*/
             }
             h2 {
                 text-align: left;
@@ -38,17 +40,16 @@
                 max-width: 400px;
                 line-height: 70px;
                 color: $darkgray;
-                @include breakpoint(small only){
-                    font-size: 20px;
-                    line-height:30px;
-                }
+
                 @include breakpoint(medium only){
-                    font-size: 30px;
-                    line-height:40px;
+                    font-size: 50px;
+                    line-height:60px;
                 }
             }
             p{
-
+                @include breakpoint(medium only){
+                    display: none;
+                }
             }
             .link{
                 font-family: $mont;
@@ -100,57 +101,62 @@
         .puces-slider{
             margin: 0 auto;
             width:100px;
-            margin-top: -50px;
+            position: relative;
+            bottom: 50px;
             @include breakpoint(small only){
-               display:none;
-            }
-            @include breakpoint(medium only){
-               display:none;
-            }
+             display:none;
+         }
+         @include breakpoint(medium only){
+             display:none;
+         }
 
-            span{
-                width: 12px;
-                height: 12px;
-                margin-right: 5px;
-                display: inline-block;
-                border: 1px solid $gold;
-                margin-right: 5px !important;
-                -ms-transform: rotate(45deg); /* IE 9 */
-                -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-                transform: rotate(45deg);
+         span{
+            width: 12px;
+            height: 12px;
+            margin-right: 5px;
+            display: inline-block;
+            border: 1px solid $gold;
+            margin-right: 5px !important;
+            -ms-transform: rotate(45deg); /* IE 9 */
+            -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+            transform: rotate(45deg);
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+
+            &:hover{
                 -webkit-transition: all 0.3s ease-in-out;
                 -moz-transition: all 0.3s ease-in-out;
                 -o-transition: all 0.3s ease-in-out;
                 transition: all 0.3s ease-in-out;
-                cursor: pointer;
-
-                &:hover{
-                    -webkit-transition: all 0.3s ease-in-out;
-                    -moz-transition: all 0.3s ease-in-out;
-                    -o-transition: all 0.3s ease-in-out;
-                    transition: all 0.3s ease-in-out;
-                    background-color: $gold;
-                }
-            }
-            .active{
                 background-color: $gold;
             }
         }
+        .active{
+            background-color: $gold;
+        }
     }
+}
 }
 
 #slide1{
-    background-color: #faf7f5 ;
-    height:100%;
+/*    background-color: #faf7f5 ;
+*/    height:100%;
+width: 100%;
+
 }
 #slide2{
-    background-color: #e6e9ec;
-     height:100%;;
+/*    background-color: #e6e9ec;
+*/     height:100%;
+width: 100%;
 }
 
 #slide3{
-    background-color:#f1f1f1 ;
-     height:100%;
+/*    background-color:#f1f1f1 ;
+*/     height:100%;
+width: 100%;
 }
 
 
@@ -160,10 +166,6 @@
 
 }
 
-@include breakpoint(small only){
-     .slide-content h2{
-        color: pink;
-     }
-}
+
 
 

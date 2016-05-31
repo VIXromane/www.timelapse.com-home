@@ -5,6 +5,7 @@
 			<span style="display: block;height: 100%;">
 				<span class="etat-dispo" style="position: absolute;bottom: 65px; width: 100%;left: 0;">DISPONIBLE</span>
 			</span>
+			
 			<!--?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?>-->
 		</div>
 

@@ -75,7 +75,14 @@ get_header(); ?>
 
 <section class="text-center iconiques">
 	<div class="row">
-		<h2>Modèles icôniques</h2>
+
+		<div class="large-12 columns text-center titre">
+
+			<span class="large-4 columns filet"></span>
+			<h2 class="large-4 columns">Modèles icôniques</h2>
+			<span class="large-4 columns filet"></span>
+
+		</div>
 
 		<div class="large-12 columns text-center">
 			<p class="hide-for-small-only large-2 columns"></p>
@@ -106,7 +113,7 @@ get_header(); ?>
 
 	<?php endwhile;?> -->
 
-	<div class="row">
+	<div class="row listing-produits">
 		<?php
 			$args = array(
 				'post_type' => 'product',
