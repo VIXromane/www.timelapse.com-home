@@ -176,7 +176,7 @@
 				-moz-transition: all 0.5s ease-in-out;
 				-o-transition: all 0.5s ease-in-out;
 				transition: all 0.5s ease-in-out;
-			
+
 				min-width: 170px;
 				margin-top: 25px;
 
@@ -251,3 +251,77 @@ hr{
 	}
 }
 
+/*** NAVIGATION ***/
+
+.main-navigation{
+	
+	border: 3px solid green;
+}
+
+.site-recherche{
+	display:flex;
+
+	.input-group-field{
+		height: 50px;
+		width: 200px;
+		margin-right: 0px;
+	}
+
+	#searchsubmit{
+		background: url("../images/_visuels/loupe.png") no-repeat center;
+		background-color:transparent;
+		outline:0;
+		border:0;
+		text-indent:-102000px;
+		display:block;
+		width:17px;
+		height:16px;
+		position: relative;
+		right: 50px;
+
+	}
+}
+
+form#searchform{
+	height: 50px;
+}
+
+.rechercheavance{
+	height: 50px;
+	padding: 0px 25px;
+	line-height: 50px;
+	background-color: $darkgray;
+	color: white;
+	font-family: $lora;
+	font-size: 12px;
+}
+
+#site-navigation{
+	background-color: white;
+
+	#menu-navigation-1{
+		background-color: white;
+
+		li{
+			border: 0px;
+			a{
+				font-family: $lora;
+				font-weight: 700;
+				font-size: 12px;
+				color: $darkgray;
+				text-transform: uppercase;
+				padding: 16px;
+				height: 50px;
+				line-height: 20px;
+				vertical-align: middle;
+			}
+		}
+
+		
+	}
+
+	li.searchbarr{
+		background-color: white;
+
+	}
+}
