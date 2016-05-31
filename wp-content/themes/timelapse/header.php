@@ -78,46 +78,77 @@ session_start();
 
 		<?php do_action( 'foundationpress_layout_start' ); ?>
 
-		<header id="masthead" class="site-header" role="banner">
+		<header id="masthead" class="site-header fixed" role="banner">
 			<div class="title-bar" data-responsive-toggle="site-navigation">
 				<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
-				<div class="title-bar-title">
+<!-- 				<div class="title-bar-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				</div> -->
+			</div>
+			<div id="top-head" class="main-navigation">
+				<div class="row">
+					<div class="networks medium-4 columns hide-for-small-only">
+						<ul id="networks-list">
+							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+							</a></li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+							</a></li>
+							<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+							</a></li>
+							<li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i>
+							</a></li>
+						</ul>
+					</div>
+
+					<div class="medium-4 small-6 columns">
+						<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/main-logo.png" alt="logo principal main timelapse">
+
+					</div>
+
+					<div class="medium-4 small-6 columns">
+						<ul id="acccount">
+							<li><a href="">Mon panier</a></li>
+							<li><a href="">Mon compte</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
+			<div class="main-navigation">
+				<nav id="site-navigation" class="top-bar row" role="navigation">
 
-			<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
+					<div class="top-bar-right"> <!-- SEARCHBAR -->
+						<ul class="menu">
+							<li class="searchbarr">
 
-				<div class="top-bar-right"> <!-- SEARCHBAR -->
-					<ul class="menu">
-						<li class="searchbarr">
+								<article id="search-2" class="widget widget_search">
+									<div class="site-recherche">
+										
+										<?php get_search_form( ); ?>
+										<div class="rechercheavance">Recherche avancée 
+											<i class="fa fa-angle-down" aria-hidden="true"></i>
+										</div>
+									</div>
+								</article>
+							</li>
+						</ul>
+					</div>
 
-							<article id="search-2" class="widget widget_search">
-								<div class="site-recherche">
-									
-									<?php get_search_form( ); ?>
-									<div class="rechercheavance">Recherche avancée</div>
-								</div>
-						</article>
-					</li>
-				</ul>
-			</div>
+					<div class="top-bar-left"> <!-- NAVIGATION MENU -->
+						<?php foundationpress_top_bar_r(); ?>
 
-			<div class="top-bar-left"> <!-- NAVIGATION MENU -->
-				<?php foundationpress_top_bar_r(); ?>
-
-				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) == 'topbar' ) : ?>
-				<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
-			<?php endif; ?>
+						<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) == 'topbar' ) : ?>
+						<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
+					<?php endif; ?>
+				</div>
+			</nav>
 		</div>
-	</nav>
-</header>
+	</header>
 
-<?php include('custombutton.php'); ?>
+	<?php include('custombutton.php'); ?>
 
-<section class="container">
+	<section class="container">
 
 
-	<?php
+		<?php
 				// --> Injection slider my_slider 10
-	do_action( 'foundationpress_after_header' );
+		do_action( 'foundationpress_after_header' );

@@ -38,8 +38,10 @@ get_header(); ?>
   <h1 class="entry-title"><?php the_title(); ?></h1>
 </header>
 
-<div class="small-12 large-12 columns ariane">
-  <?php woocommerce_breadcrumb(); ?>
+<div class="main-navigation">
+    <div class="small-12 large-12 columns row ariane">
+    <?php woocommerce_breadcrumb(); ?>
+  </div>
 </div>
 
 <section class="text-center">

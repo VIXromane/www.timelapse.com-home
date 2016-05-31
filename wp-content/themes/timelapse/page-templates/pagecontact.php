@@ -32,12 +32,15 @@ get_header(); ?>
 
 </div> -->
 
-<div class="small-12 large-12 columns ariane">
-  <?php woocommerce_breadcrumb(); ?>
+<div class="main-navigation">
+    <div class="small-12 large-12 columns row ariane">
+    <?php woocommerce_breadcrumb(); ?>
+  </div>
 </div>
 
 <header class="small-12 large-12 columns text-center">
-  <h1 class="entry-title"><?php the_title(); ?></h1>
+  <h1 class="entry-title main-navigation"><?php the_title(); ?></h1>
+  
   <div class="large-12 columns text-center">
     <p class="hide-for-small-only large-2 columns"></p>
     <p class="intro-contact small-12 large-8 columns">

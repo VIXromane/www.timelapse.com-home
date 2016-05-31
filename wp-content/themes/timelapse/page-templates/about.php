@@ -33,12 +33,13 @@ get_header(); ?>
   <?php do_action( 'foundationpress_after_content' ); ?>
 
 </div> -->
-
-<div class="small-12 large-12 columns ariane">
-  <?php woocommerce_breadcrumb(); ?>
+<div class="main-navigation">
+    <div class="small-12 large-12 columns row ariane">
+    <?php woocommerce_breadcrumb(); ?>
+  </div>
 </div>
 
-<header class="small-12 large-12 columns text-center">
+<header class="small-12 large-12 columns text-center main-navigation">
   <h1 class="entry-title"><?php the_title(); ?></h1>
 </header>
 
