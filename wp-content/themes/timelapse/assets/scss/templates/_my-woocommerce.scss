@@ -166,7 +166,22 @@
 			height: 50px !important;
 			line-height: 25px !important;
 		}
+
+		.produitajoute{
+			position:absolute;
+			top:0;
+			right:0;
+			display:none;
+			width:100%;
+			height:100%;
+			background:red;
+			text-align:center;
+		}
 	}
+}
+
+.wc-forward{
+	display:none;
 }
 
 .linkproduct{

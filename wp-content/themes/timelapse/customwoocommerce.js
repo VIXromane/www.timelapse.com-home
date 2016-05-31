@@ -22,5 +22,9 @@ $('.produit').hover(function(){
 })
 
 $('.link-add-product').on('click', function(e){
-	
+
+})
+
+$('.bouton-add').on('click', function(){
+	$(this).find('.produitajoute').show().addClass('animated fadeIn')
 })

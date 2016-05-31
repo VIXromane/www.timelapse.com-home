@@ -1,29 +1,3 @@
-
-<section class="adieu" id="intro">
-
-	<div id="visu-intro">
-		<div id="circles">
-			<div id="point1" class="points"></div>
-			<div id="point2" class="points"></div>
-			<div id="point3" class="points"></div>
-			<div id="point4" class="points"></div>
-
-		</div>
-	</div>
-
-	<div class="intro-content text-center">
-		<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/complete-logo-white-timelapse.png" alt="logo full verison Timelapse introduction">
-		<h1>Montres intemporelles de collection</h1>
-		<a class="removeme" href="#" id="action">Trouvez votre modèle<br/>
-			<i class="fa fa-angle-down" aria-hidden="true"></i>
-		</a>
-	</div>
-
-		<!--<img id="visuel-introduction" src="<?= _URL_IMAGES; ?>/_visuels_dyns/visuel-intro.png" alt="visuel Timelapse introduction">-->
-	</section>
-
-
-
 <?php
 
 
