@@ -54,7 +54,7 @@ get_header(); ?>
 
     <div class="row medium-9 colums content">
 
-      <form action="">
+      <!-- <form action="">
 
         <div class="row">
           <label>Votre nom et prénom
@@ -96,7 +96,10 @@ get_header(); ?>
         <a href="#" class="send button postfix">Envoyer</a>
       </div>
 
-    </form>
+    </form> -->
+
+
+    <?php echo do_shortcode('[contact-form-7 id="56" title="contact-form"]') ?>
 
   </div>
 </article>

@@ -21,3 +21,6 @@ $('.produit').hover(function(){
 
 })
 
+$('.link-add-product').on('click', function(e){
+	
+})

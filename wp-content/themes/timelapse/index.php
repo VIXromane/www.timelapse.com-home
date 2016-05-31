@@ -76,13 +76,13 @@ get_header(); ?>
 <section class="text-center iconiques">
 	<div class="row">
 
-		<div class="large-12 columns text-center titre">
+<!-- 		<div class="large-12 columns text-center titre">
+ -->
+<!-- 			<span class="large-4 columns filet"></span>
+ -->			<h2 class="large-12 columns">Modèles icôniques</h2>
+			<!-- <span class="large-4 columns filet"></span> -->
 
-			<span class="large-4 columns filet"></span>
-			<h2 class="large-4 columns">Modèles icôniques</h2>
-			<span class="large-4 columns filet"></span>
-
-		</div>
+		<!-- </div> -->
 
 		<div class="large-12 columns text-center">
 			<p class="hide-for-small-only large-2 columns"></p>
@@ -118,7 +118,8 @@ get_header(); ?>
 			$args = array(
 				'post_type' => 'product',
 				'posts_per_page' => 8,
-				'orderby' =>'rand','order' => 'DESC'
+				'meta_key' => 'total_sales',
+				'orderby' => 'meta_value_num',
 				);
 			$loop = new WP_Query( $args );
 			if ( $loop->have_posts() ) {

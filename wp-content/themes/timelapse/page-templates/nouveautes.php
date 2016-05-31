@@ -20,8 +20,7 @@ get_header(); ?>
           <?php the_content(); ?>
       </div>
       <footer>
-          <?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
-          <p><?php the_tags(); ?></p>
+
       </footer>
       <?php do_action( 'foundationpress_page_before_comments' ); ?>
       <?php comments_template(); ?>
@@ -33,14 +32,43 @@ get_header(); ?>
 <?php do_action( 'foundationpress_after_content' ); ?>
 
 </div> -->
-<div class="small-12 large-12 columns ariane">
-  <?php woocommerce_breadcrumb(); ?>
-</div>
+
 
 <header class="small-12 large-12 columns text-center">
   <h1 class="entry-title"><?php the_title(); ?></h1>
 </header>
 
-je suis sur la page nouveautés
+<div class="small-12 large-12 columns ariane">
+  <?php woocommerce_breadcrumb(); ?>
+</div>
+
+<section class="text-center">
+
+  <div class="row listing-produits">
+    <?php
+    $args = array(
+      'post_type' => 'product',
+      'posts_per_page' => 12,
+      'orderby' =>'rand','order' => 'DESC'
+      );
+    $loop = new WP_Query( $args );
+    if ( $loop->have_posts() ) {
+      while ( $loop->have_posts() ) : $loop->the_post(); global $product;
+
+      get_template_part( 'template-parts/best-sells', get_post_format());
+
+        //wc_get_template_part( 'content', 'product' );
+      endwhile;
+    } else {
+      echo __( 'No products found' );
+    }
+    wp_reset_postdata();
+    ?>
+     <?php do_action('woocommerce_after_shop_loop'); // woocommerce pagination   ?>
+  </div>
+
+</section>
+
+
 
 <?php get_footer();

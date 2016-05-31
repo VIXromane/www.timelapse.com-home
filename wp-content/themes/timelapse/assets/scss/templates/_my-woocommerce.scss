@@ -133,6 +133,40 @@
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+
+	.bouton-add{
+		position:absolute;
+		bottom:0 !important;
+		left:0;
+		width: 100% !important;
+		background-color: $darkgray !important;
+		margin-bottom: 0px;
+		color: white;
+		font-family: $mont;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		line-height: 50px !important;
+		height:50px !important;
+		transition:0.5s;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		
+		&:hover{
+			background-color: $gold !important;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+		}
+
+		.add_to_cart_button{
+			background:transparent !important;
+			height: 50px !important;
+			line-height: 25px !important;
+		}
+	}
 }
 
 .linkproduct{

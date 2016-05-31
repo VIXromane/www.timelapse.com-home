@@ -131,14 +131,21 @@
 	.black{
 		background-color: $darkgray;
 		opacity: 0.95;
-		padding: 50px 0px;
+		padding-top: 50px;
+		padding-bottom: 26px;
 
 		form{
-			label{
+			p{
 				font-family: $mont;
 				color: white;
 				font-size: 12px;
+
 				
+			}
+
+			input{
+				border: 0px;
+				height: 35px;
 			}
 
 			option{
@@ -146,7 +153,16 @@
 				font-family: $mont;
 				color: $darkgray;
 			}
-			.send{
+
+			textarea{
+				height: 80px;
+				border: 0px;
+			}
+
+			select{
+				border: 0px;
+			}
+			.wpcf7-submit{
 				height: 50px;
 				background-color: $gold;
 				text-transform: uppercase;
@@ -154,14 +170,15 @@
 				font-size: 12px;
 				font-family: $mont;
 				color: $darkgray;
-				width:100%;
+				width:30%;
+				border: 0px;
 				-webkit-transition: all 0.5s ease-in-out;
 				-moz-transition: all 0.5s ease-in-out;
 				-o-transition: all 0.5s ease-in-out;
 				transition: all 0.5s ease-in-out;
-				margin-left: -15px;
+			
 				min-width: 170px;
-				margin-top: 40px;
+				margin-top: 25px;
 
 				&:hover{
 					-webkit-transition: all 0.5s ease-in-out;
