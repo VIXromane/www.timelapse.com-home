@@ -73,8 +73,6 @@ remove_action('woocommerce_single_product_summary', 'woocommerce_template_single
 
 
 
-
-
 function my_title($title, $idarticle) {
     if(get_post_format($idarticle) == "video")
     {

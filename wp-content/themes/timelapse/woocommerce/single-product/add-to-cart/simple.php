@@ -34,14 +34,13 @@ if ( ! $product->is_purchasable() ) {
 	<form class="cart" method="post" enctype='multipart/form-data'>
 		<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
-
-
-		<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
-		
-		<button type="submit" class="reservation button alt small-6 columns">RÉSERVER</button>
-
-		<button type="submit" class="single_add_to_cart_button button alt small-6 columns"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
-
+		<div class="small-6 columns">
+					<button type="submit" class="reservation button alt ">RÉSERVER</button>
+		</div>
+		<div class="small-6 columns">
+			<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
+			<button type="submit" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+		</div>
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 	</form>
 

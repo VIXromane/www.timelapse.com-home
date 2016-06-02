@@ -27,17 +27,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 *
 	 * @hooked wc_print_notices - 10
 	 */
-	 do_action( 'woocommerce_before_single_product' );
+	do_action( 'woocommerce_before_single_product' );
 
-	 if ( post_password_required() ) {
-	 	echo get_the_password_form();
-	 	return;
-	 }
-?>
+	if ( post_password_required() ) {
+		echo get_the_password_form();
+		return;
+	}
+	?>
 
-<div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php
+		<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/	garantie-single-product.jpg
+		" alt="garantie timelapse 12 mois fiche produit reassurance" class="garantie-product">
+
+
+
+		<?php
 		/**
 		 * woocommerce_before_single_product_summary hook.
 		 *
@@ -45,12 +50,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 		 * @hooked woocommerce_show_product_images - 20
 		 */
 		do_action( 'woocommerce_before_single_product_summary' );
-	?>
+		?>
 
-	<div class="summary entry-summary">
+		<div class="summary entry-summary">
 
 
-		<?php
+			<?php
 			/**
 			 * woocommerce_single_product_summary hook.
 			 *
@@ -65,13 +70,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 			 */
 			do_action( 'woocommerce_single_product_summary' );
 
-		?>
+			?>
 
-		<?php woocommerce_product_additional_information_tab(); ?>
+			<?php woocommerce_product_additional_information_tab(); ?>
 
-	</div><!-- .summary -->
+		</div><!-- .summary -->
 
-	<?php
+		<?php
 		/**
 		 * woocommerce_after_single_product_summary hook.
 		 *
@@ -80,10 +85,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 		 * @hooked woocommerce_output_related_products - 20
 		 */
 		// do_action( 'woocommerce_after_single_product_summary' );
-	?>
+		?>
 
-	<meta itemprop="url" content="<?php the_permalink(); ?>" />
+		<meta itemprop="url" content="<?php the_permalink(); ?>" />
 
-</div><!-- #product-<?php the_ID(); ?> -->
+	</div><!-- #product-<?php the_ID(); ?> -->
 
-<?php do_action( 'woocommerce_after_single_product' ); ?>
+	<?php do_action( 'woocommerce_after_single_product' ); ?>
