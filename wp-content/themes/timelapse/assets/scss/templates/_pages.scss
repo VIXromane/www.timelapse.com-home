@@ -1,8 +1,22 @@
 /*** GLOBAL ***/
 
+.logo-head{		-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	display: inline-block;
 
+	&:hover{
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		transform: scale(0.9);
+	}
 
-.woocommerce-breadcrumb{
+}
+
+nav.woocommerce-breadcrumb{
 	display: block;
 	font-family: $lora;
 	font-size: 11px;
@@ -297,6 +311,18 @@ hr{
 				font-family: $lora;
 				color: $darkgray;
 				font-size: 12px;
+				-webkit-transition: all 0.4s ease-in-out;
+				-moz-transition: all 0.4s ease-in-out;
+				-o-transition: all 0.4s ease-in-out;
+				transition: all 0.4s ease-in-out;
+
+				&:hover{
+					font-weight: 700;
+					-webkit-transition: all 0.4s ease-in-out;
+					-moz-transition: all 0.4 ease-in-out;
+					-o-transition: all 0.4s ease-in-out;
+					transition: all 0.4s ease-in-out;
+				}
 			}
 		}
 	}
@@ -396,6 +422,18 @@ hr{
 			-o-transition: all 0.5s ease-in-out;
 			transition: all 0.5s ease-in-out;
 		}
+	}
+
+	.bag{
+		padding-left: 10px;
+		border-left: 1px solid $mediumgray;
+		margin-left: 8px;
+	}
+
+	.shopping-bag{
+		height: 17px !important;
+		width: auto;
+		margin-left: 7px;
 	}
 
 	#site-navigation{

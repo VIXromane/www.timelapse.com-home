@@ -7,9 +7,12 @@
  */
 get_header(); ?>
 
-<div class="small-12 large-12 columns ariane">
-		<?php woocommerce_breadcrumb(); ?>
+<div class="main-navigation">
+    <div class="small-12 large-12 columns row ariane">
+    <?php woocommerce_breadcrumb(); ?>
+  </div>
 </div>
+
 <div class="row">
 
 	<div class="small-12 large-12 columns full-watches" role="main">
@@ -17,8 +20,8 @@ get_header(); ?>
 	<?php while ( woocommerce_content() ) : the_post(); ?>
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
-				<h1 class="entry-title"><?php the_title(); ?></h1>
-			</header>
+<!-- 				<h1 class="entry-title"><?php the_title(); ?></h1>
+ -->			</header>
 			<?php do_action( 'foundationpress_page_before_entry_content' ); ?>
 			<div class="entry-content">
 				<?php the_content(); ?>

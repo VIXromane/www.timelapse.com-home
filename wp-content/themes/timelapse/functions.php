@@ -56,23 +56,22 @@ define('_URL_IMAGES', get_stylesheet_directory_uri().'/assets/images/');
 
 
 function marque() {
-    
+
 }
 
-// --> Premier test pour actions
-    add_action('woocommerce_single_product_summary', 'marque', 15);
-
-// --> Changement d'ordre on met le prix au dessus du titre
-    // 1. Supprime l'action initiale d'affichage du titre
-        remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
-    // 2. Je change sa priorité
-        add_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 1);
+// --> 
+    // 1. Supprime l'action initiale d'affichage de la categorie/marque
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+    // 2. Je change sa priorité --> ordre 1
+add_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 1);
 
 
-// --> Titre du produit sur l'image...
-    // 1. On enleve le titre du produit du DIV concerné
-    remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_title', 5);
-    // 2. fonction rajouté dans le fichier single-product/product-image.php
+add_action('woocommerce_single_product_summary', 'woocommerce_product_description_tab', 60);
+
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10);
+
+
+
 
 
 
