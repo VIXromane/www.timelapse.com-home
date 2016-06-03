@@ -37,8 +37,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/	garantie-single-product.jpg
-		" alt="garantie timelapse 12 mois fiche produit reassurance" class="garantie-product">
 
 
 
@@ -53,6 +51,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 		?>
 
 		<div class="summary entry-summary">
+			<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/	garantie-single-product.jpg
+			" alt="garantie timelapse 12 mois fiche produit reassurance" class="garantie-product">
 
 
 			<?php
@@ -74,7 +74,35 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<?php woocommerce_product_additional_information_tab(); ?>
 
+			<div class="share-product small-12 columns no-padding">
+
+				<p class="small-6 columns no-padding">
+					Vous aimez ce modèle ? Partagez-le !
+				</p>
+				<ul class="networks-share-product small-6 columns no-padding">
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+					</a></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+					</a></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+					</a></li>
+					<li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i>
+					</a></li>
+				</ul>
+			</div>
+
+			<div class="need-help small-12 columns no-padding">
+				<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/phone-help.png
+				" alt="contact besoin d'aide fiche produit timelapse" class="phone-help">
+				<p>
+					
+
+					<strong>Besoin d’informations complémentaires ?</strong> Contactez-nous au 03 88 03 03 03.
+				</p>
+			</div>
+
 		</div><!-- .summary -->
+
 
 		<?php
 		/**
@@ -92,3 +120,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</div><!-- #product-<?php the_ID(); ?> -->
 
 	<?php do_action( 'woocommerce_after_single_product' ); ?>
+
+

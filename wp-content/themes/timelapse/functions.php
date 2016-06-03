@@ -72,6 +72,11 @@ remove_action('woocommerce_single_product_summary', 'woocommerce_template_single
 
 
 
+// add_action('woocommerce_single_product_summary', 'woocommerce_output_related_products', 100);
+
+
+
+
 
 function my_title($title, $idarticle) {
     if(get_post_format($idarticle) == "video")
