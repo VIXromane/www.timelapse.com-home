@@ -70,3 +70,5 @@ $woocommerce_loop['loop']++;
 	 */
 	do_action( 'woocommerce_after_subcategory', $category ); ?>
 </li>
+
+HELLO
