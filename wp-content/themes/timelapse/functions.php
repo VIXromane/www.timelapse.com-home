@@ -71,6 +71,9 @@ add_action('woocommerce_single_product_summary', 'woocommerce_product_descriptio
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10);
 
 
+add_action('woocommerce_single_product_summary', 'woocommerce_upsell_display', 70);
+add_action('woocommerce_single_product_summary', 'woocommerce_output_related_products', 80);
+
 
 
 function my_title($title, $idarticle) {
