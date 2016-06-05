@@ -1,0 +1,206 @@
+#page .main-content{
+	width: 100% !important;
+	margin: 0px auto !important;
+	text-align: center !important;
+	padding: 0px;
+
+	form{
+		padding: 0px !important;
+	}
+
+	table{
+		border: 0px;
+	}
+
+	input{
+		box-shadow: none;
+	}
+
+	h1{
+		text-align: center;
+		border-bottom: 0px;
+		margin-top: -20px;
+	}
+
+	input.button{
+		margin-top: 25px;
+		height: 40px;
+		font-family: $mont;
+		text-transform: uppercase;
+		font-size: 12px;
+		border-radius: 0px;
+		background-color: white;
+		border: 1px solid $lightgray;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+
+		@include breakpoint(small only){
+			width: 100%;
+			margin-top: 25px;
+		}
+
+		&:hover{
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+			background-color: $lightgray;
+
+
+
+		}
+	}
+}
+
+.status-publish.hentry{
+	margin: 0 auto !important;
+	form{
+		thead{
+			background-color: white;
+		}
+		tr{
+			background-color: white;
+			td{
+				a{
+					color: $darkgray !important;
+					font-size: 12px;
+					text-decoration: none;
+					-webkit-transition: all 0.3s ease-in-out;
+					-moz-transition: all 0.3s ease-in-out;
+					-o-transition: all 0.3s ease-in-out;
+					transition: all 0.3s ease-in-out;
+
+
+					&:hover{
+						color: black;
+						text-decoration: underline;
+						-webkit-transition: all 0.3s ease-in-out;
+						-moz-transition: all 0.3s ease-in-out;
+						-o-transition: all 0.3s ease-in-out;
+						transition: all 0.3s ease-in-out;
+					}
+				}
+			}
+		}
+		.product-name{
+			font-family: $mont;
+			color: $darkgray;
+			font-size: 12px;
+			text-transform: uppercase;
+
+
+		}
+		.product-price{
+			font-family: $mont;
+			color: $darkgray;
+			font-size: 12px;
+			text-transform: uppercase;
+			.amount{
+				color: #d5af6d;
+				font-family: $play;
+				font-size: 15px;
+				font-weight: 700;
+
+			}
+		}
+		.product-quantity{
+			display: none;
+		}
+		.product-subtotal{
+			display:none;
+
+		}
+		.product-remove{
+			padding: 0px !important;
+		}
+	}
+}
+
+.status-publish.hentry{
+	th{
+		color: $darkgray;
+		font-family: $mont !important;
+	}
+}
+
+
+
+/** TOTAL CARD **/
+
+.cart_totals{
+	table{
+		background-color: white;
+		font-family: $lora;
+		tr{
+
+			th{
+				color: $darkgray;
+				font-family: $mont !important;
+				text-transform: uppercase;
+				font-size: 12px;
+				padding:15px !important;
+				width:60% !important;
+			}
+			td{
+
+			}
+		}
+	}
+	.amount{
+		color: #d5af6d;
+		font-family: $play;
+		font-size: 15px;
+		font-weight: 700;
+
+	}
+	.shipping-calculator-button{
+		color:$darkgray;
+		text-decoration: underline;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+
+		&:hover{
+
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+			font-weight: 700;
+		}
+
+	}
+	.order-total{
+		background-color: $goldgray;
+	}
+	.shipping{
+		background-color: white;
+	}
+}
+
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button{
+	background-color: $darkgray;
+	font-family: $mont;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: white;
+	border-radius: 0px;
+	height: 50px;
+	line-height: 25px;
+	letter-spacing: 1px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+
+	&:hover{
+		background-color: $gold;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+}

@@ -2,6 +2,82 @@
 	display: table;
 }
 
+.products{
+	text-align: center;
+	li.product{
+		border: 1px solid $light-gray;
+		position:relative;
+		overflow:hidden;
+		display: table-cell;
+		transform: scale(0.9);
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+
+		a{
+			img{
+				display: block;
+				margin:0 auto !important;
+			}
+			.mycat{
+
+			}
+			h3{
+				font-family: $lora;
+				font-size: 14px !important;
+				font-weight: 700;
+				line-height: 24px;
+				color: $darkgray;
+			}
+			.price{
+				font-family: $play;
+				color: $gold !important;
+				font-weight: 700;
+				font-size: 14px;
+				margin-bottom: 20px;	
+			}
+		}
+		.add_to_cart_button{
+			opacity:0;
+			transition:0.5s;
+			display: block;
+			width:100%;
+			background-color:$darkgray !important;
+			height: 50px;
+			line-height: 34px !important;
+			border-radius: 0px !important;
+			font-family: $mont!important;
+			letter-spacing: 1px;
+			font-size: 12px;
+			text-transform: uppercase;
+			color:white !important;
+			position:absolute !important;
+			bottom:0;
+			left:0 !important;
+			z-index:12;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+
+			@include breakpoint(small only){
+				font-size: 10px !important;
+				line-height: 35px !important;
+			}
+
+			&:hover{
+				-webkit-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+				background-color: $gold !important;
+			}
+		}
+	}
+}
+
+
 
 .produit{
 	border: 1px solid $light-gray;
@@ -512,4 +588,75 @@
 {
 	background: $gold;
 }
+
+
+/*** TRI FILTRES PAGES NOUVEAUTES ***/
+.tri-news{
+	display: flex;
+	.orderby{
+		border: none !important;
+		font-family: $lora;
+		color: $darkgray;
+		font-size: 12px;
+		margin-bottom: 0px;
+		margin-top: -5px; 
+		padding-left: 0px !important;
+		color: $mediumgray;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+
+		&:hover{
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+			color: $gold;
+			cursor: pointer;
+			font-weight: 700;
+		}
+	}
+}
+
+/*** 	MESAGE PRODUIT AJOUTÉ AU PANIER    ***/
+
+.woocommerce .woocommerce-message{
+	border-top: 3px solid $gold !important;
+	padding-right: 0px !important;
+
+	background-color: $lightgray !important;
+	font-family: $lora;
+	color: $darkgray;
+	line-height: 24px;
+	font-size:12px;
+	background-color: transparent !important;
+	border-bottom: 1px solid $lightgray;
+	letter-spacing: 1px;
+	
+
+	a.button.wc-forward{
+		font-family: $mont;
+		text-transform: uppercase;
+		padding: 8px 20px;
+		font-size: 11px;
+		border-radius: 0px;
+		background-color: white;
+		border: 1px solid $lightgray;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+
+		&:hover{
+			
+			background-color: $lightgray;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}
+
 

@@ -109,7 +109,7 @@ session_start();
 					<div class="medium-4 small-6 columns">
 						<ul id="acccount">
 							<li><a href="">Mon compte</a></li>
-							<li><a class="bag" href="">Mon panier</a><img class="shopping-bag" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/shopping-bag.png" alt="panier"></li>
+							<li><a class="bag" href="http://localhost:8888/www.timelapse.com/panier/">Mon panier</a><img class="shopping-bag" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/shopping-bag.png" alt="panier"></li>
 						</ul>
 					</div>
 				</div>

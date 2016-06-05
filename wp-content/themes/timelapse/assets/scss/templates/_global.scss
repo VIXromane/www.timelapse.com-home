@@ -52,32 +52,32 @@ p{
 	margin-top: 20px;
 	letter-spacing: 1.4px;
 	-webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
 	
 	i{
 		padding-right: 10px;
 	}
 
 	&:hover{
-	-webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    background-color: white;
-    border: 1px solid $darkgray;
-    color: $darkgray;
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+		background-color: white;
+		border: 1px solid $darkgray;
+		color: $darkgray;
 	};
 }
 
 /* pager */
 .cycle-pager { 
-    text-align: center; width: 100%; z-index: 500; position: absolute; top: 10px; overflow: hidden;
+	text-align: center; width: 100%; z-index: 500; position: absolute; top: 10px; overflow: hidden;
 }
 .cycle-pager span { 
-    font-family: arial; font-size: 50px; width: 16px; height: 16px; 
-    display: inline-block; color: #ddd; cursor: pointer; 
+	font-family: arial; font-size: 50px; width: 16px; height: 16px; 
+	display: inline-block; color: #ddd; cursor: pointer; 
 }
 .cycle-pager span.cycle-pager-active { color: #D69746;}
 .cycle-pager > * { cursor: pointer;}
@@ -85,4 +85,45 @@ p{
 
 .cacher {
 	display: none !important;
+}
+
+/* Pagination */
+
+.woocommerce-pagination{
+	margin: 25px 0px 50px 0px;
+	.page-numbers{
+		display: inline;
+		font-family: $mont;
+		color: $darkgray;
+		li{
+			display: inline-block;
+			padding:10px;
+
+			a{
+				-webkit-transition: all 0.5s ease-in-out;
+				-moz-transition: all 0.5s ease-in-out;
+				-o-transition: all 0.5s ease-in-out;
+				transition: all 0.5s ease-in-out;
+				&:hover{
+					-webkit-transition: all 0.5s ease-in-out;
+					-moz-transition: all 0.5s ease-in-out;
+					-o-transition: all 0.5s ease-in-out;
+					transition: all 0.5s ease-in-out;
+					color: $gold;
+					font-weight: 700;
+				}
+				&:active{
+					-webkit-transition: all 0.5s ease-in-out;
+					-moz-transition: all 0.5s ease-in-out;
+					-o-transition: all 0.5s ease-in-out;
+					transition: all 0.5s ease-in-out;
+					color: $gold;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+	.current{
+
+	}
 }

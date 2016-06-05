@@ -114,7 +114,7 @@ get_header(); ?>
 
 	<div class="row text-center"><!-- CTA TOUTES NOS MONTRES-->
 
-		<a role="button" class="cta" href="#">
+		<a role="button" class="cta" href="<?php echo esc_url( home_url( '/' ) ); ?>categorie-produit/montres/">
 			<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 			DÉCOUVRIR TOUTES NOS MONTRES
 		</a>

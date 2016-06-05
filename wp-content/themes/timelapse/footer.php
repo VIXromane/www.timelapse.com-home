@@ -281,6 +281,7 @@
 	</script>
 	<script src="<?php echo get_stylesheet_directory_uri() ?>/customwoocommerce.js"></script>
 
-
+	<script>
+	$( ".woocommerce-ordering ul li" ).append( "<div class="hover">Je suis un hover</div>" );</script>
 </body>
 </html>

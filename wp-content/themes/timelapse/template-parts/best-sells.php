@@ -25,7 +25,7 @@
 			$id = $product->id; ?>
 			<?php woocommerce_template_loop_add_to_cart( $product->post, $product ); ?>
 			<div class="produitajoute">produit ajouté<i class="fa fa-check" aria-hidden="true"></i>
-</div>
+			</div>
 		</div>
 	</div>
 </a>

@@ -92,6 +92,13 @@ get_header(); ?>
 	<?php endwhile;?> -->
 
 	<ul class="products">
+				<div class="bouton-add">
+			<?php global $product;
+			$id = $product->id; ?>
+			<?php woocommerce_template_loop_add_to_cart( $product->post, $product ); ?>
+			<div class="produitajoute">produit ajouté<i class="fa fa-check" aria-hidden="true"></i>
+			</div>
+		</div>
 		<?php
 		$args = array(
 			'post_type' => 'product',
@@ -112,10 +119,9 @@ get_header(); ?>
 
 	<div class="row text-center"><!-- CTA TOUTES NOS MONTRES-->
 
-		<a role="button" class="cta" href="#">
+		<a role="button" class="cta" href="http://localhost:8888/www.timelapse.com/categorie-produit/montres/">
 			<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-			DÉCOUVRIR TOUTES NOS MONTRES
-		</a>
+SALUT		</a>
 	</div>
 	<?php do_action( 'foundationpress_after_content' ); ?>
 </div>

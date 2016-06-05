@@ -1,0 +1,217 @@
+/**** COMMANDE TUNNEL ACHAT *****/
+
+.woocommerce-info{
+	display: none;
+}
+
+h3{
+	font-family: $play;
+	font-weight: 700;
+	color: $darkgray;
+}
+
+.woocommerce form .form-row label{
+	text-align: left;
+}
+
+#customer_details{
+	margin-bottom: 50px;
+}
+#order_review{
+	.amount{
+		color: #d5af6d;
+		font-family: $play;
+		font-size: 15px;
+		font-weight: 700;
+
+	}
+	th{
+		color: $darkgray;
+		font-family: $mont !important;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+	td{
+		color: $darkgray;
+		font-family: $mont !important;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+}
+
+#payment.woocommerce-checkout-payment{
+	background-color: $lightgray;
+	border-radius: 0px;
+}
+
+.wc_payment_methods.payment_methods.methods{
+	border-bottom: none !important;
+	padding-bottom: 0px !important;
+}
+
+.form-row.place-order{
+	background-color: white !important;
+	padding:0px !important;
+}
+
+input#place_order{
+	background-color: $darkgray !important;
+	font-family: $mont;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: white;
+	border-radius: 0px;
+	height: 50px !important;
+	width:20%;
+	line-height: 25px;
+	letter-spacing: 1px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+
+	&:hover{
+		background-color: $gold !important;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+}
+
+
+/***** MESSAGE ERREUR SAISIE DES CHAMPS ******/
+
+.woocommerce-error{
+	li{
+		font-family: $mont;
+		color: $darkgray;
+		font-size: 12px;
+		line-height: 24px;
+		strong{
+			color: $gold;
+		}
+	}
+}
+
+/***** COMMANDE REÇUE ******/
+
+
+.woocommerce-thankyou-order-received{
+	font-family: $play;
+	font-size: 40px;
+	line-height: 50px;
+	color: $gold;
+	margin-bottom: 50px;
+}
+.woocommerce-thankyou-order-details.order_details{
+	margin-bottom: 50px;
+	margin-left: 25px;
+	li{
+		line-height: 24px;
+		font-size: 12px;
+		font-family: $mont;
+		margin-bottom: 25px;
+		strong{
+			
+		}
+	}
+	.amount{
+		color: #d5af6d;
+		font-family: $play;
+		font-size: 15px;
+		font-weight: 700;
+	}
+}
+
+.shop_table.order_details{
+	background-color: white;
+	.amount{
+		color: #d5af6d;
+		font-family: $play;
+		font-size: 15px;
+		font-weight: 700;
+
+	}
+	tr{
+		background-color: white;
+		td{
+
+		}
+		th{
+			color: $darkgray;
+			font-family: $mont !important;
+			text-transform: uppercase;
+			font-size: 12px;
+			padding:15px !important;
+			width:60% !important;
+		}
+	}
+	a{
+		color: $darkgray !important;
+		padding:15px 0px !important;
+		font-size: 12px;
+		text-decoration: none;
+		font-family: $mont;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		text-transform: uppercase;
+
+
+		&:hover{
+			color: black;
+			text-decoration: underline;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}
+tfoot{
+	tr:last-of-type{
+		background-color: $goldgray !important;
+	}
+}
+
+.product-name{
+	padding-top: 15px !important;
+	padding-bottom: 15px !important;
+
+}
+
+
+/*** Détails client ****/
+
+.shop_table.customer_details{
+	margin-bottom: 50px !important;
+	tr{
+		background-color: white !important;
+		th{
+			color: $darkgray;
+			font-family: $mont !important;
+			text-transform: uppercase;
+			font-size: 12px;
+			padding:15px !important;
+			width:60% !important;
+		}
+		td{
+			font-family: $lora;
+			color: $darkgray;
+		}
+	}
+}
+
+.addresses{
+	h3{
+		font-size: 25px;
+		letter-spacing: 0px;
+	}
+	address{
+		font-family: $lora;
+		font-style: italic;
+		color: $darkgray;
+	}
+}

@@ -65,3 +65,5 @@ if ( $products->have_posts() ) : ?>
 <?php endif;
 
 wp_reset_postdata();
+
+
