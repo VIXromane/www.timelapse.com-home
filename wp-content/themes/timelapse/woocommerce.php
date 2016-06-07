@@ -10,30 +10,51 @@ $obj = get_queried_object();
 get_header(); ?>
 
 <div class="main-navigation">
-    <div class="small-12 large-12 columns row ariane">
-    <?php woocommerce_breadcrumb(); ?>
-  </div>
+	<div class="small-12 large-12 columns row ariane">
+		<?php woocommerce_breadcrumb(); ?>
+	</div>
 </div>
+
+<?php if(is_product_category('montres')){ ?>
+
+<h1 class="montre-titre text-center">Montres</h1>
+
+<?php } ?>
+
+<?php if(is_product_category('montres')){ ?>
+<div class="filtres-afficher">
+	<h4 class="small-12 columns text-center filtre-title">Affinez votre recherche</h4>
+
+	<div class="row content-filtres">
+		<?php 	
+			if($obj->term_id == 95) {
+			dynamic_sidebar('recherche-filtres'); 					
+
+			}
+			elseif($obj->term_id == 96) { 
+
+			}
+			else
+			{
+
+			}
+		?>
+
+	</div>
+	
+</div>
+<?php } ?>
 
 <div class="row">
 
 	<div class="small-12 large-12 columns full-watches" role="main">
 
-		<div class="flitres-afficher">
-			<?php 	
-			if($obj->term_id == 95) {
-			dynamic_sidebar('recherche-filtres'); 					
-
-			}
-			?>
-		</div>
+		
+		<?php do_action( 'foundationpress_before_content' ); ?>
+		<?php while ( woocommerce_content() ) : ?>
 
 
-	<?php do_action( 'foundationpress_before_content' ); ?>
-	<?php while ( woocommerce_content() ) : ?>
-
-
-	<?php the_post(); ?>
+		<?php the_post(); ?>
 
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
@@ -53,7 +74,7 @@ get_header(); ?>
 		</article>
 	<?php endwhile;?>
 	<?php do_action( 'foundationpress_after_content' ); ?>
-	</div>
+</div>
 </div>
 <?php get_footer();
 

@@ -671,5 +671,39 @@
 	clear: both !important;
 }
 
+/*** FILTRES ***/
 
+.filtres-afficher{
+	margin-top:-10px;
+	margin-bottom: 10px;
+	background-color: $goldgray;
+/*	border-bottom: 1px solid $lightgray;
+*/	padding:25px 0px;
+
+	h4.filtre-title{
+		font-family: $play;
+		color: $darkgray;
+		font-size: 25px;
+		padding-bottom: 25px;
+	}
+
+	h3.widget-title{
+		font-family: $mont;
+		letter-spacing: 1px;
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+	select{
+		border: 1px solid $lightgray;
+		font-family: $lora;
+		font-size: 13px;
+		color: $darkgray;
+		font-style: italic;
+
+
+		option{
+			font-family: $lora !important;
+		}
+	}
+}
 

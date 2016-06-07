@@ -33,8 +33,6 @@ $('.bouton-add').on('click', function(){
 })
 
 
-
-
 // $('li').hover(function(){
 // 	$(this).find('.custombutton').css('opacity', '1');
 // 	$(this).find('.fondgris-home').css('opacity', '1');	
