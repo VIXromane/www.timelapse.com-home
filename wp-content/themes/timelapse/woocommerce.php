@@ -21,6 +21,14 @@ get_header(); ?>
 
 <?php } ?>
 
+<?php if(is_product_category('bracelet')){ ?>
+
+<h1 class="bracelet-titre text-center">Bracelets</h1>
+
+<?php } ?>
+
+<!-- SIDEBAR FILTRES PAGE MONTRES -->
+
 <?php if(is_product_category('montres')){ ?>
 <div class="filtres-afficher">
 	<h4 class="small-12 columns text-center filtre-title">Affinez votre recherche</h4>
@@ -45,6 +53,31 @@ get_header(); ?>
 </div>
 <?php } ?>
 
+<!-- SIDEBAR FILTRES PAGE BRACELETS -->
+
+<?php if(is_product_category('bracelet')){ ?>
+<div class="filtres-afficher">
+	<h4 class="small-12 columns text-center filtre-title">Affinez votre recherche</h4>
+
+	<div class="row content-filtres">
+		<?php 	
+			if($obj->term_id == 96) {
+			dynamic_sidebar('recherche-filtres-bracelets'); 					
+
+			}
+			elseif($obj->term_id == 95) { 
+
+			}
+			else
+			{
+
+			}
+		?>
+
+	</div>
+	
+</div>
+<?php } ?>
 <div class="row">
 
 	<div class="small-12 large-12 columns full-watches" role="main">

@@ -48,7 +48,7 @@ nav.woocommerce-breadcrumb{
 header.small-12.large-12.columns.text-center{
 	padding: 0px !important;
 }
-.entry-title,.montre-titre{
+.entry-title,.montre-titre,.bracelet-titre{
 	font-family: $play;
 	color: $darkgray;
 	font-size: 50px;
@@ -56,6 +56,14 @@ header.small-12.large-12.columns.text-center{
 	padding: 30px 0px 50px 0px;
 	border-bottom: 1px solid $lightgray;
 	
+}
+
+div.full-watches{
+	h1.page-title{
+		
+		text-align: center;
+	}
+
 }
 
 
