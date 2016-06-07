@@ -21,9 +21,32 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $product;
 
+$t = get_the_terms( $product->id, 'product_cat') ;
+
+if ($t[0]->term_id == 96)
+{
+	$bracelets = true;
+}
+else
+{
+	$bracelets = false;
+}
+
+//MONTRES
+
+if ($t[0]->term_id == 95)
+{
+	$montres = true;
+}
+else
+{
+	$montres = false;
+}
+
 if ( ! $product->is_purchasable() ) {
 	return;
 }
+
 
 ?>
 
@@ -35,16 +58,32 @@ if ( ! $product->is_purchasable() ) {
 		<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
 		<div class="small-6 columns text-center no-padding-left">
-					<button type="submit" class="reservation button alt ">RÉSERVER</button>
-		</div>
-		<div class="small-6 columns text-center no-padding-right">
-			<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
-			<button type="submit" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
-		</div>
-		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
-	</form>
+			<?php if(!$bracelets) : ?>
+			<button type="submit" class="reservation button alt ">RÉSERVER</button>
+		<?php endif; ?>
+	</div>
 
-	<?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>
+
+	<?php if($bracelets) : ?>
+
+	<?php if ( ! $product->is_sold_individually() ) {
+		woocommerce_quantity_input( array(
+			'min_value'   => apply_filters( 'woocommerce_quantity_input_min', 1, $product ),
+			'max_value'   => apply_filters( 'woocommerce_quantity_input_max', $product->backorders_allowed() ? '' : $product->get_stock_quantity(), $product ),
+			'input_value' => ( isset( $_POST['quantity'] ) ? wc_stock_amount( $_POST['quantity'] ) : 1 )
+			) );
+	}
+	?>
+	<?php endif; ?>
+
+<div class="small-6 columns text-center no-padding-right">
+	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
+	<button type="submit" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+</div>
+<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
+</form>
+
+<?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>
 
 <?php endif; ?>
 

@@ -35,7 +35,6 @@ get_header( 'shop' ); ?>
 
 			<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
 
-			HOLAAAAA
 
 		<?php endif; ?>
 

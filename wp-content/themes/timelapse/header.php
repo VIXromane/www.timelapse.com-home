@@ -102,15 +102,22 @@ session_start();
 
 					<div class="medium-4 small-6 columns">
 						<a class="logo-head" href="http://localhost:8888/www.timelapse.com/">
-						<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/main-logo.png" alt="logo principal main timelapse">
+							<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/main-logo.png" alt="logo principal main timelapse">
 						</a>
 					</div>
 
 					<div class="medium-4 small-6 columns">
 						<ul id="acccount">
 							<li><a href="">Mon compte</a></li>
-							<li><a class="bag" href="http://localhost:8888/www.timelapse.com/panier/">Mon panier</a><img class="shopping-bag" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/shopping-bag.png" alt="panier"></li>
+							<li><a class="bag" href="http://localhost:8888/www.timelapse.com/panier/">Mon panier
+								<img class="shopping-bag" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/shopping-bag.png" alt="panier">
+								<span class=""> 
+									(<?php echo sprintf (_n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>)
+								</span></a>
+							</li>
 						</ul>
+
+
 					</div>
 				</div>
 			</div>
@@ -123,11 +130,13 @@ session_start();
 
 								<article id="search-2" class="widget widget_search">
 									<div class="site-recherche">
-										
+
 										<?php get_search_form( ); ?>
 										<div class="rechercheavance">Recherche avancée 
 											<i class="fa fa-angle-down" aria-hidden="true"></i>
+
 										</div>
+
 									</div>
 								</article>
 							</li>
@@ -145,6 +154,7 @@ session_start();
 		</div>
 	</header>
 
+	
 	<?php include('custombutton.php'); ?>
 
 	<section class="container">

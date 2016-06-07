@@ -95,14 +95,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/phone-help.png
 				" alt="contact besoin d'aide fiche produit timelapse" class="phone-help">
 				<p>
-					
-
 					<strong>Besoin d’informations complémentaires ?</strong> Contactez-nous au 03 88 03 03 03.
 				</p>
 			</div>
 
 		</div><!-- .summary -->
-
 
 
 
@@ -112,15 +109,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<?php do_action( 'woocommerce_after_single_product' ); ?>
 
+	<div class="clear"></div>
 
-		<?php
-		/**
-		 * woocommerce_after_single_product_summary hook.
-		 *
-		 * @hooked woocommerce_output_product_data_tabs - 10
-		 * @hooked woocommerce_upsell_display - 15
-		 * @hooked woocommerce_output_related_products - 20
-		 */
-		// do_action( 'woocommerce_after_single_product_summary' );
-		?>
+
+		<?php woocommerce_output_related_products (); ?>
+
+
+
+
+
 

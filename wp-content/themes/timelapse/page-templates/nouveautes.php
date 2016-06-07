@@ -65,7 +65,8 @@ get_header(); ?>
     $args = array(
       'post_type' => 'product',
       'posts_per_page' => 12,
-      'orderby' =>'rand','order' => 'DESC'
+      'orderby' =>'rand','order' => 'DESC',
+      'product_cat' => 'montres'
       );
     $loop = new WP_Query( $args );
     if ( $loop->have_posts() ) {

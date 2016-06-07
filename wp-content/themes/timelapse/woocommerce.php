@@ -5,6 +5,8 @@
  * @package FoundationPress
  * @since FoundationPress 1.0.0
  */
+
+$obj = get_queried_object();
 get_header(); ?>
 
 <div class="main-navigation">
@@ -16,8 +18,23 @@ get_header(); ?>
 <div class="row">
 
 	<div class="small-12 large-12 columns full-watches" role="main">
+
+		<div class="flitres-afficher">
+			<?php 	
+			if($obj->term_id == 95) {
+			dynamic_sidebar('recherche-filtres'); 					
+
+			}
+			?>
+		</div>
+
+
 	<?php do_action( 'foundationpress_before_content' ); ?>
-	<?php while ( woocommerce_content() ) : the_post(); ?>
+	<?php while ( woocommerce_content() ) : ?>
+
+
+	<?php the_post(); ?>
+
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
 				<h1 class="entry-title"><?php the_title(); ?></h1>

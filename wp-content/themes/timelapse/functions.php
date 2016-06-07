@@ -71,8 +71,12 @@ add_action('woocommerce_single_product_summary', 'woocommerce_product_descriptio
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10);
 
 
-add_action('woocommerce_single_product_summary', 'woocommerce_upsell_display', 70);
-add_action('woocommerce_single_product_summary', 'woocommerce_output_related_products', 80);
+// add_action('woocommerce_single_product_summary', 'woocommerce_upsell_display', 70);
+
+remove_action('woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
+remove_action('woocommerce_single_product_summary', 'woocommerce_upsell_display', 15);
+
+
 
 
 
@@ -85,3 +89,20 @@ function my_title($title, $idarticle) {
 
 }
 add_filter('the_title', 'my_title', 10, 2);
+
+
+function textdomain_register_sidebars() {
+	/* Register the primary sidebar. */
+	register_sidebar(
+		array(
+			'id' => 'sidebar-1',
+			'name' => __( 'recherche-filtres', 'textdomain' ),
+			'description' => __( 'Filtres woocommerces', 'textdomain' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s small-12 medium-4 columns end">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
+}
+add_action( 'widgets_init', 'textdomain_register_sidebars' );
