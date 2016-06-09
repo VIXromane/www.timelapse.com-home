@@ -100,7 +100,7 @@ session_start();
 						</ul>
 					</div>
 
-					<div class="medium-4 small-6 columns">
+					<div class="medium-4 small-6 columns text-center">
 						<a class="logo-head" href="http://localhost:8888/www.timelapse.com/">
 							<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/main-logo.png" alt="logo principal main timelapse">
 						</a>
@@ -116,13 +116,11 @@ session_start();
 								</span></a>
 							</li>
 						</ul>
-
-
 					</div>
 				</div>
 			</div>
-			<div class="main-navigation">
-				<nav id="site-navigation" class="top-bar row" role="navigation">
+			<div>
+				<nav class="" role="navigation">
 
 					<div class="top-bar-right"> <!-- SEARCHBAR -->
 						<ul class="menu">
@@ -130,8 +128,10 @@ session_start();
 
 								<article id="search-2" class="widget widget_search">
 									<div class="site-recherche">
-
-										<?php get_search_form( ); ?>
+										<div class="searchform">
+											<?php get_search_form( ); ?>
+										</div>
+										
 										<div class="rechercheavance">Recherche avancée 
 											<i class="fa fa-angle-down" aria-hidden="true"></i>
 
@@ -143,16 +143,26 @@ session_start();
 						</ul>
 					</div>
 
-					<div class="top-bar-left"> <!-- NAVIGATION MENU -->
+					<!--<div class="top-bar-left">
 						<?php foundationpress_top_bar_r(); ?>
 
 						<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) == 'topbar' ) : ?>
 						<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
 					<?php endif; ?>
+				</div>-->
+
+				<div class="header-custom-menu">
+					<div class="noresponsive row"><?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?></div>
+					<button class="showmenuresponsive"><i class="fa fa-bars"></i></button>
+					<div class="responsivemenu">
+						<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+					</div>
 				</div>
 			</nav>
 		</div>
 	</header>
+	
+
 
 	
 	<?php include('custombutton.php'); ?>

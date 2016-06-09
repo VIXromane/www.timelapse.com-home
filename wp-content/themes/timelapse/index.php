@@ -137,7 +137,7 @@ get_header(); ?>
 		<div class="large-up-6 medium-up-6 small-up-3 text-center">
 			<div class="large-2 columns brand"><a href="#"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/logo-jaeger.png" alt="logo Jaeger Leboultr"></a></div>
 			<div class="large-2 columns brand"><a href="#"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/logo-breitling.png" alt="logo Breitling"></a></div>
-			<div class="large-2 columns brand"><a href="#"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/logo-omega.png" alt="logo Jaeger Omega"></a></div>
+			<div class="large-2 columns brand"><a href="http://localhost:8888/www.timelapse.com/categorie-produit/montres/omega/"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/logo-omega.png" alt="logo Jaeger Omega"></a></div>
 			<div class="large-2 columns brand"><a href="#"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/logo-cartier.png" alt="logo Cartier"></a></div>
 			<div class="large-2 columns brand"><a href="#"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/logo-iwc.png" alt="logo IWC schaffhausen"></a></div>
 			<div class="large-2 columns brand"><a href="#"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/logo-rolex.png" alt="logo Jaeger Rolex"></a></div>

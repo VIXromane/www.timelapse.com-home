@@ -334,6 +334,9 @@ hr{
 			}
 		}
 	}
+	@include breakpoint(small only){
+		margin-left:40px;
+	}
 }
 
 /*.fixed{
@@ -436,6 +439,13 @@ hr{
 		padding-left: 10px;
 		border-left: 1px solid $mediumgray;
 		margin-left: 8px;
+		
+		@include breakpoint(small only){
+			margin-left: 0px;
+			padding-left: 0px;
+			border-left: 0px;
+		}
+
 	}
 
 	.shopping-bag{
@@ -484,6 +494,9 @@ hr{
 
 			}
 		}
+		.top-bar, .top-bar ul{
+			
+		}
 	}
 	.menu .active>a{
 		color: $darkgray !important;
@@ -491,3 +504,8 @@ hr{
 		background-color: white !important;
 		border-bottom: 4px solid $darkgray !important;
 	}
+
+
+.searchform{
+	background-color: white;
+}

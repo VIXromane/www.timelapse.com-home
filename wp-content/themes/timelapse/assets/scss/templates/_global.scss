@@ -128,3 +128,23 @@ p{
 
 	}
 }
+
+div.rechercheavance{
+
+	&:hover{
+
+		.recherche-avancee-header{
+			opacity: 1;
+		}
+	}
+	
+}
+
+.recherche-avancee-header{
+	opacity: 0;
+	background-color: $lightgray;
+	height: 200px;
+	position: absolute;
+	top:200px;
+
+}

@@ -51,6 +51,11 @@ require_once( 'library/slider-lib.php' );
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/protocol-relative-theme-assets.php' );
 
+function register_my_menu() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
+
 
 define('_URL_IMAGES', get_stylesheet_directory_uri().'/assets/images/');
 
@@ -94,8 +99,9 @@ add_filter('the_title', 'my_title', 10, 2);
 
 
 function textdomain_register_sidebars() {
-	/* Register the primary sidebar. */
-	register_sidebar(/**** SIDEBAR FILTRES MONTRES ****/
+	/**** SIDEBAR FILTRES MONTRES ****/
+
+	register_sidebar(
 		array(
 			'id' => 'sidebar-1',
 			'name' => __( 'recherche-filtres', 'textdomain' ),
@@ -108,9 +114,24 @@ function textdomain_register_sidebars() {
 	);
 
 	register_sidebar(/**** SIDEBAR FILTRES BRACELETS ****/
+
 		array(
 			'id' => 'sidebar-2',
 			'name' => __( 'recherche-filtres-bracelets', 'textdomain' ),
+			'description' => __( 'Filtres woocommerces', 'textdomain' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s small-12 medium-4 columns end">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
+
+	/**** SIDEBAR FILTRES MONTRES ****/
+	register_sidebar(/**** SIDEBAR FILTRES BRACELETS ****/
+
+		array(
+			'id' => 'sidebar-3',
+			'name' => __( 'recherche-avancee-header', 'textdomain' ),
 			'description' => __( 'Filtres woocommerces', 'textdomain' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s small-12 medium-4 columns end">',
 			'after_widget' => '</div>',
