@@ -79,12 +79,7 @@ session_start();
 		<?php do_action( 'foundationpress_layout_start' ); ?>
 
 		<header id="masthead" class="site-header fixed" role="banner">
-			<div class="title-bar" data-responsive-toggle="site-navigation">
-				<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
-<!-- 				<div class="title-bar-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-				</div> -->
-			</div>
+			
 			<div id="top-head" class="main-navigation">
 				<div class="row">
 					<div class="networks medium-4 columns hide-for-small-only">
@@ -120,8 +115,7 @@ session_start();
 				</div>
 			</div>
 			<div>
-				<nav class="" role="navigation">
-
+				<nav class="row" role="navigation">
 					<div class="top-bar-right"> <!-- SEARCHBAR -->
 						<ul class="menu">
 							<li class="searchbarr">
@@ -131,7 +125,7 @@ session_start();
 										<div class="searchform">
 											<?php get_search_form( ); ?>
 										</div>
-										
+
 										<div class="rechercheavance">Recherche avancée 
 											<i class="fa fa-angle-down" aria-hidden="true"></i>
 
@@ -143,18 +137,10 @@ session_start();
 						</ul>
 					</div>
 
-					<!--<div class="top-bar-left">
-						<?php foundationpress_top_bar_r(); ?>
-
-						<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) == 'topbar' ) : ?>
-						<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
-					<?php endif; ?>
-				</div>-->
-
-				<div class="header-custom-menu">
-					<div class="noresponsive row"><?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?></div>
+				<div class="header-custom-menu ">
+					<div class="noresponsive"><?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?></div><!-- NO RESPONSIVE MENU -->
 					<button class="showmenuresponsive"><i class="fa fa-bars"></i></button>
-					<div class="responsivemenu">
+					<div class="responsivemenu text-center"><!-- RESPONSIVE MENU -->
 						<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 					</div>
 				</div>

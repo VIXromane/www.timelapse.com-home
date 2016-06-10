@@ -2,7 +2,9 @@
 	border-bottom: 1px solid $lightgray;
 	.responsivemenu{
 		display:none;
-
+		@include breakpoint (small down){
+			width: 100%;
+		}
 
 		ul{
 			li{
@@ -69,7 +71,7 @@
 
 		font-size: 18px;
 		line-height: 50px;
-		padding-left:25px;
+		padding-left:20px;
 		color: $darkgray;
 		-webkit-transition: all 0.2s ease-in-out;
 		-moz-transition: all 0.2s ease-in-out;
