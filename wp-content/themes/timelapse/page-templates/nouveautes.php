@@ -6,43 +6,23 @@ get_header(); ?>
 
 <?php get_template_part( 'template-parts/featured-image' ); ?>
 
-<!-- <div id="page-full-width" role="main">
-
-<?php do_action( 'foundationpress_before_content' ); ?>
-<?php while ( have_posts() ) : the_post(); ?>
-
-  <article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
-      <header>
-          <h1 class="entry-title"><?php the_title(); ?></h1>
-      </header>
-      <?php do_action( 'foundationpress_page_before_entry_content' ); ?>
-      <div class="entry-content">
-          <?php the_content(); ?>
-      </div>
-      <footer>
-
-      </footer>
-      <?php do_action( 'foundationpress_page_before_comments' ); ?>
-      <?php comments_template(); ?>
-      <?php do_action( 'foundationpress_page_after_comments' ); ?>
-  </article>
-  
-<?php endwhile;?>
-
-<?php do_action( 'foundationpress_after_content' ); ?>
-
-</div> -->
 
 
-<header class="small-12 large-12 columns text-center">
-  <h1 class="entry-title"><?php the_title(); ?></h1>
+
+
+
+<div class="main-navigation">
+    <div class="small-12 large-12 columns row ariane">
+    <?php woocommerce_breadcrumb(); ?>
+  </div>
+</div>
+
+<header class="small-12 large-12 columns text-center main-navigation">
+  <h1 class="news-title"><?php the_title(); ?></h1>
 </header>
 
-<div class="main-navigation small-12 large-12 columns">
   <div class="row">
-    <div class="ariane medium-6 small-12 columns">
-      <?php woocommerce_breadcrumb(); ?>
-    </div>
+ 
 
     <form class="woocommerce-ordering medium-2 small-12 columns tri-news" method="get">
       <select name="orderby" class="orderby">
@@ -55,8 +35,7 @@ get_header(); ?>
       </select>
     </form>
   </div>
-  
-</div>
+
 
 <section class="text-center">
 
@@ -64,7 +43,7 @@ get_header(); ?>
     <?php
     $args = array(
       'post_type' => 'product',
-      'posts_per_page' => 12,
+      'posts_per_page' => 8,
       'orderby' =>'rand','order' => 'DESC',
       'product_cat' => 'montres'
       );

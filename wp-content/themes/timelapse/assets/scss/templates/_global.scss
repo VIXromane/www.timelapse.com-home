@@ -90,7 +90,7 @@ p{
 
 /* Pagination */
 
-.woocommerce-pagination{
+.woocommerce nav.woocommerce-pagination{
 	margin: 25px 0px 50px 0px;
 	.page-numbers{
 		display: inline;
@@ -127,6 +127,10 @@ p{
 	.current{
 
 	}
+}
+
+.woocommerce nav.woocommerce-pagination ul{
+
 }
 
 div.rechercheavance{

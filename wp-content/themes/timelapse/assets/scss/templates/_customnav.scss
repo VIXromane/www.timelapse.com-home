@@ -1,7 +1,12 @@
-.header-custom-menu{
+.border{
 	border-bottom: 1px solid $lightgray;
+}
+
+.header-custom-menu{
+	
 	.responsivemenu{
 		display:none;
+		border-top: 1px solid $lightgray;
 		@include breakpoint (small down){
 			width: 100%;
 		}
@@ -58,6 +63,15 @@
 				font-weight: 700;
 				background-color: white;
 				border-bottom: 4px solid $darkgray;
+
+				@include breakpoint(small only) {
+					border-bottom: 0px;
+					color: $gold;
+					-webkit-transition: all 0.2s ease-in-out;
+					-moz-transition: all 0.2s ease-in-out;
+					-o-transition: all 0.2s ease-in-out;
+					transition: all 0.2s ease-in-out;
+				}
 			}
 		}
 	}

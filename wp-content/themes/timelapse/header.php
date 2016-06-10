@@ -114,7 +114,7 @@ session_start();
 					</div>
 				</div>
 			</div>
-			<div>
+			<div class="border">
 				<nav class="row" role="navigation">
 					<div class="top-bar-right"> <!-- SEARCHBAR -->
 						<ul class="menu">
