@@ -680,35 +680,72 @@
 /*	border-bottom: 1px solid $lightgray;
 */	padding:25px 0px;
 
-	h4.filtre-title{
-		font-family: $play;
-		color: $darkgray;
-		font-size: 25px;
-		padding-bottom: 25px;
-	}
+h4.filtre-title{
+	font-family: $play;
+	color: $darkgray;
+	font-size: 25px;
+	padding-bottom: 25px;
+}
 
-	h3.widget-title{
-		font-family: $mont;
-		letter-spacing: 1px;
-		font-size: 14px;
-		text-transform: uppercase;
-	}
-	select{
-		border: 1px solid $lightgray;
-		font-family: $lora;
-		font-size: 13px;
-		color: $darkgray;
-		font-style: italic;
+h3.widget-title{
+	font-family: $mont;
+	letter-spacing: 1px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+select{
+	border: 1px solid $lightgray;
+	font-family: $lora;
+	font-size: 13px;
+	color: $darkgray;
+	font-style: italic;
 
 
-		option{
-			font-family: $lora !important;
-		}
+	option{
+		font-family: $lora !important;
 	}
+}
 }
 
 .input-text.qty.text{
 	box-shadow: none;
 	height:50px;
 	border: 1px solid $lightgray;
+}
+
+
+/*** RETOUR BOUTIQUE PANIER VIDE ***/
+
+
+
+#return-to-shop{
+	display: block;
+	border: 1px solid $darkgray;
+	background-color: #fff;
+	border-radius: 0px;
+	line-height: 50px;
+	vertical-align: middle;
+	padding: 0px;
+	color: $darkgray;
+	font-family: $mont;
+	font-size: 12px;
+	height: 50px;
+	max-width:300px;
+	margin: 0 auto;
+
+	letter-spacing: 1.4px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+
+	&:hover{
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+		background-color: $darkgray;
+		color: white;
+	}
+	
 }
