@@ -1,0 +1,24 @@
+.hrborderblog{
+	height: 50px;
+	display: block;
+}
+
+.blog-content{
+
+	blockquote{
+		padding:0px 15px;
+		border-left: $gold solid 2px;
+		margin: 25px 0px;
+		p{
+		font-family: $play !important;
+		font-size: 20px !important;
+		color: $darkgray;
+		line-height: 30px;
+		}
+
+	}
+	p{
+		color: $darkgray;
+		margin: 25px 0px;
+	}
+}

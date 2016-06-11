@@ -45,27 +45,27 @@ get_header(); ?>
 
 <!-- <div class="fondgris" style="display: block;height: 100%">
 		<span class="etat-dispo" style="position: absolute;bottom: 70px; width: 100%;left: 0;">DISPONIBLE</span>
-</div> -->
+	</div> -->
 
-<section class="text-center iconiques">
-	<div class="row">
+	<section class="text-center iconiques">
+		<div class="row">
 
 <!-- 		<div class="large-12 columns text-center titre">
- -->
+-->
 <!-- 			<span class="large-4 columns filet"></span>
- -->			<h2 class="large-12 columns">Modèles icôniques</h2>
-			<!-- <span class="large-4 columns filet"></span> -->
+-->			<h2 class="large-12 columns">Modèles icôniques</h2>
+<!-- <span class="large-4 columns filet"></span> -->
 
-		<!-- </div> -->
+<!-- </div> -->
 
-		<div class="large-12 columns text-center">
-			<p class="hide-for-small-only large-2 columns"></p>
-			<p class="intro small-12 large-8 columns">
-				Ne passez pas à côté de notre catégorie icôniques : une sélection de pièces 
-				rares et uniques à ne surtout pas manquer.
-			</p>
-			<p class="hide-for-small-only large-2 columns"></p>
-		</div>
+<div class="large-12 columns text-center">
+	<p class="hide-for-small-only large-2 columns"></p>
+	<p class="intro small-12 large-8 columns">
+		Ne passez pas à côté de notre catégorie icôniques : une sélection de pièces 
+		rares et uniques à ne surtout pas manquer.
+	</p>
+	<p class="hide-for-small-only large-2 columns"></p>
+</div>
 
 		<!-- <?php do_action( 'foundationpress_before_content' ); ?>
 
@@ -89,27 +89,27 @@ get_header(); ?>
 
 	<div class="row listing-produits">
 		<?php
-			$args = array(
-				'post_type' => 'product',
-				'posts_per_page' => 8,
-				'meta_key' => 'total_sales',
-				'orderby' => 'meta_value_num',
-				);
-			$loop = new WP_Query( $args );
-			if ( $loop->have_posts() ) {
-				while ( $loop->have_posts() ) : $loop->the_post(); global $product;
+		$args = array(
+			'post_type' => 'product',
+			'posts_per_page' => 8,
+			'meta_key' => 'total_sales',
+			'orderby' => 'meta_value_num',
+			);
+		$loop = new WP_Query( $args );
+		if ( $loop->have_posts() ) {
+			while ( $loop->have_posts() ) : $loop->the_post(); global $product;
 
-				get_template_part( 'template-parts/best-sells', get_post_format());
+			get_template_part( 'template-parts/best-sells', get_post_format());
 
 				//wc_get_template_part( 'content', 'product' );
-				endwhile;
-			} else {
-				echo __( 'No products found' );
-			}
-			wp_reset_postdata();
+			endwhile;
+		} else {
+			echo __( 'No products found' );
+		}
+		wp_reset_postdata();
 		?>
 	</div>
-		
+
 	
 
 	<div class="row text-center"><!-- CTA TOUTES NOS MONTRES-->
@@ -154,26 +154,33 @@ get_header(); ?>
 		
 		<article>
 			<?php
-	                $args = array(
-	                'post_type' => 'post',
-	                'posts_per_page' => 3,
-	                );
-	                $loop = new WP_Query( $args );
-	                if ( $loop->have_posts() ) {
-	                while ( $loop->have_posts() ) : $loop->the_post();
-	                get_template_part( 'template-parts/blog-article', get_post_format() );
-	                endwhile;
-	                } else {
-	                echo __( 'No products found' );
-	                }
-	                wp_reset_query();
-	        ?>
+			$args = array(
+				'post_type' => 'post',
+				'posts_per_page' => 3,
+				);
+			$loop = new WP_Query( $args );
+			if ( $loop->have_posts() ) {
+				while ( $loop->have_posts() ) : $loop->the_post();
+				get_template_part( 'template-parts/blog-article', get_post_format() );
+				endwhile;
+			} else {
+				echo __( 'No products found' );
+			}
+			wp_reset_query();
+			?>
 
 		</article>
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>index.php/journal" class="">Voir plus d'articles</a>
+
+	</div>
+	<div class="row">
+
+		<a role="button" class="cta" href="<?php echo esc_url( home_url( '/' ) ); ?>index.php/journal">
+			<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+			VOIR PLUS D'ARTICLES
+		</a>
 
 	</div><!-- FIN ROW -->
 </section><!-- FIN JOURNAL TIMELAPSE-->
 
 
-	<?php get_footer();
+<?php get_footer();

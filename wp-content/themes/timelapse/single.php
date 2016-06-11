@@ -9,8 +9,8 @@
 get_header(); ?>
 
 <div id="single-post" role="main" class="single-blog">
-<?php do_action( 'foundationpress_before_content' ); ?>
-<?php while ( have_posts() ) : the_post(); ?>
+	<?php do_action( 'foundationpress_before_content' ); ?>
+	<?php while ( have_posts() ) : the_post(); ?>
 	<div class="row">
 		<div class="small-12 large-2 columns">
 
@@ -21,11 +21,11 @@ get_header(); ?>
 			<span class="title-line"></span>
 			<div class="single-blog-img">
 
-			<?php
+				<?php
 				if ( has_post_thumbnail() ) :
 					the_post_thumbnail();
 				endif;
-			?>
+				?>
 
 			</div>
 			<div class="blog-content">
@@ -37,7 +37,16 @@ get_header(); ?>
 		</div>
 
 	</div>
-	<a href="<?php echo esc_url( home_url( '/' ) ); ?>journal" class="back-blog">Retour au blog</a>
+
+	<div class="row text-center">
+
+		<a class="link-blog" href="<?php echo esc_url( home_url( '/' ) ); ?>journal" class="back-blog"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>Retour au journal</a>
+
+		<span class="hrborderblog">
+			
+		</span>
+	</div>
+
 
 <?php endwhile;?>
 
