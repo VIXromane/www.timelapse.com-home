@@ -151,62 +151,27 @@ get_header(); ?>
 	<div class="row"><!-- contenu -->
 		<h2>Journal Timelapse</h2>
 
-		<article class="small-12 medium-4 columns text-center"><!-- ARTICLE JOURNAL 1-->
-			<a href="#">
-				<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/article-blog-1.jpg" alt="photo article blog 1">
-				<div>
-					<strong>10</strong><br/>
-					<time>MAI</time>
-				</div>
-			</a>
-			<h4>
-				Glashütte Original Sixties Panorama Date : Elégance en noir et blanc
-			</h4>
-			<p>
-				Retour sur une grande montre d’origine allemande, hommage à la créativité des années soixante : la Sixties Panorama Date de la Maison Glashütte Original.
-			</p>
-			<a href="#" class="link">
-				<i class="fa fa-long-arrow-right" aria-hidden="true"></i>Lire la suite
-			</a>
-		</article>
+		
+		<article>
+			<?php
+	                $args = array(
+	                'post_type' => 'post',
+	                'posts_per_page' => 3,
+	                );
+	                $loop = new WP_Query( $args );
+	                if ( $loop->have_posts() ) {
+	                while ( $loop->have_posts() ) : $loop->the_post();
+	                get_template_part( 'template-parts/blog-article', get_post_format() );
+	                endwhile;
+	                } else {
+	                echo __( 'No products found' );
+	                }
+	                wp_reset_query();
+	        ?>
 
-		<article class="small-12 medium-4 columns text-center"><!-- ARTICLE JOURNAL 2-->
-			<a href="#">
-				<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/article-blog-2.jpg" alt="photo article blog 2">
-				<div>
-					<strong>26</strong><br/>
-					<time>AVR</time>
-				</div>
-			</a>
-			<h4>
-				Nouvelles Tudor Heritage Black Bay : La Boucle est bouclée
-			</h4>
-			<p>
-				Focus sur les nouvelles Tudor heritage black bay équipées d’un calibre de manufacture. Une montre aux codes vintages maintenant certifiée chronomètre.
-			</p>
-			<a href="#" class="link">
-				<i class="fa fa-long-arrow-right" aria-hidden="true"></i>Lire la suite
-			</a>
 		</article>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>index.php/journal" class="">Voir plus d'articles</a>
 
-		<article class="small-12 medium-4 columns text-center"><!-- ARTICLE JOURNAL 3-->
-			<a href="#">
-				<img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/_visuels/article-blog-3.jpg" alt="photo article blog 3">
-				<div>
-					<strong>08</strong><br/>
-					<time>AVR</time>
-				</div>
-			</a>
-			<h4>
-				MeisterSinger Phanero : L ’art de prendre le temps 
-			</h4>
-			<p>
-				Découverte de la nouvelle montre MeisterSinger Phanero : Un beau garde-temps mono-aiguille, unisexe et élégant dans une boîte de 35mm. On aime.
-			</p>
-			<a href="#" class="link">
-				<i class="fa fa-long-arrow-right" aria-hidden="true"></i>Lire la suite
-			</a>
-		</article>
 	</div><!-- FIN ROW -->
 </section><!-- FIN JOURNAL TIMELAPSE-->
 
