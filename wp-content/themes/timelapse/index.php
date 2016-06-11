@@ -174,7 +174,7 @@ get_header(); ?>
 	</div>
 	<div class="row">
 
-		<a role="button" class="cta" href="<?php echo esc_url( home_url( '/' ) ); ?>index.php/journal">
+		<a role="button" class="cta-blog" href="<?php echo esc_url( home_url( '/' ) ); ?>index.php/journal">
 			<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 			VOIR PLUS D'ARTICLES
 		</a>
